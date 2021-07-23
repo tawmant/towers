@@ -85,7 +85,7 @@ button {
   position: relative;
   z-index: 1;
   min-height: 100vh;
-  background: url("../../images/hero__background.png") no-repeat center;
+  background: url("../images/hero__background.png") no-repeat center;
   background-size: cover;
 }
 
@@ -100,7 +100,7 @@ button {
   font-size: 9.6rem;
   font-weight: 700;
   line-height: 12.3rem;
-  color: #182D42;
+  color: #182d42;
 }
 
 .footer {
