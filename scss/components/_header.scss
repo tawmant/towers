@@ -1,0 +1,38 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    &__container {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        align-content: center;
+        .nav-list {
+            display: flex;
+            align-items: center;
+            .list-item {
+                margin-right: 3rem;
+                a {
+                    @include font("Cabin", 1.6rem, 500, 1.9rem, #182d42);
+                }
+            }
+        }
+    }
+    &__btn-wrapper {
+        display: flex;
+        align-items: center;
+        button {
+            background: rgba(24, 45, 66, 0.1);
+            border: 1px solid #182d42;
+            padding: 1.4rem 3.2rem;
+        }
+    }
+}

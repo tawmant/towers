@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap");
+html {
+  font-size: 10px;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6, body, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  align-content: center;
+}
+
+.header__nav .nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav .nav-list .list-item {
+  margin-right: 3rem;
+}
+
+.header__nav .nav-list .list-item a {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #182d42;
+}
+
+.header__btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn-wrapper button {
+  background: rgba(24, 45, 66, 0.1);
+  border: 1px solid #182d42;
+  padding: 1.4rem 3.2rem;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background: url("../../images/hero__background.png") no-repeat center;
+  background-size: cover;
+}
+
+.hero__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 28vh;
+}
+
+.hero__title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 9.6rem;
+  font-weight: 700;
+  line-height: 12.3rem;
+  color: #182D42;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer__container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__nav {
+  display: flex;
+  align-content: center;
+}
+
+.footer__nav .nav-list {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer__nav .nav-list .list-item {
+  margin-right: 3rem;
+}
+
+.footer__nav .nav-list .list-item a {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #182d42;
+}
+
+.footer__nav .nav-list:last-child {
+  margin-right: 0;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=index.css.map */
