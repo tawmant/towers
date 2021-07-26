@@ -1,0 +1,16 @@
+.location {
+    margin: 10rem 0;
+    &__title {
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
+        margin-bottom: 3rem;
+    }
+    &__description {
+        @include font("Gilroy", 1.5rem, 400, 2rem, #4B4B4B);
+        max-width: 40rem;
+    }
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

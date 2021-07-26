@@ -1,0 +1,28 @@
+.form {
+    background: #cae9f9;
+    padding: 6.8rem 0;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
+    }
+    &__description {
+        @include font("Gilroy", 1.4rem, 500, 2.4rem, #4b4b4b);
+        margin: 3rem 0 5rem 0;
+    }
+    &__input {
+        border: none;
+        border-bottom: 1px solid #4b4b4b;
+        background: #cae9f9;
+        padding: 1.3rem 16rem 1.4rem 2rem;
+        margin-right: 4rem;
+        @include font("Gilroy", 1.7rem, 500, 1.9rem, #4b4b4b);
+    }
+    &__btn {
+        @include font("Gilroy", 1.6rem, 600, 1.9rem, #fff);
+        background: #182d42;
+        padding: 1.4rem 3.7rem;
+    }
+}

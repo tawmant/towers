@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap");
 html {
   font-size: 10px;
 }
@@ -28,6 +27,15 @@ img {
 
 button {
   cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.main-cont {
+  background: url(../../../assets/images/hero__background.png) no-repeat center;
+  background-size: cover;
 }
 
 .header {
@@ -60,7 +68,7 @@ button {
 }
 
 .header__nav .nav-list .list-item a {
-  font-family: "Cabin", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
@@ -79,24 +87,95 @@ button {
 }
 
 .hero {
-  position: relative;
   z-index: 1;
   min-height: 100vh;
-  background-size: cover;
-}
-
-.hero__container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding-top: 28vh;
 }
 
 .hero__title {
+  padding-top: 28vh;
   font-family: "Futura PT", sans-serif;
   font-size: 9.6rem;
   font-weight: 700;
   line-height: 12.3rem;
   color: #182d42;
+}
+
+.location {
+  margin: 10rem 0;
+}
+
+.location__title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+  color: #182d42;
+  margin-bottom: 3rem;
+}
+
+.location__description {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #4B4B4B;
+  max-width: 40rem;
+}
+
+.location__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: #cae9f9;
+  padding: 6.8rem 0;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+  color: #182d42;
+}
+
+.form__description {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #4b4b4b;
+  margin: 3rem 0 5rem 0;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid #4b4b4b;
+  background: #cae9f9;
+  padding: 1.3rem 16rem 1.4rem 2rem;
+  margin-right: 4rem;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #4b4b4b;
+}
+
+.form__btn {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  color: #fff;
+  background: #182d42;
+  padding: 1.4rem 3.7rem;
 }
 
 .footer {
@@ -106,11 +185,6 @@ button {
   margin-top: 1rem;
 }
 
-.footer__container {
-  max-width: 130rem;
-  margin: 0 auto;
-}
-
 .footer__logo {
   display: flex;
   justify-content: center;
@@ -118,13 +192,14 @@ button {
 
 .footer__nav {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  margin-bottom: 6.5rem;
 }
 
 .footer__nav .nav-list {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 .footer__nav .nav-list .list-item {
@@ -132,8 +207,8 @@ button {
 }
 
 .footer__nav .nav-list .list-item a {
-  font-family: "Cabin", sans-serif;
-  font-size: 1.6rem;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.9rem;
   color: #182d42;
@@ -146,9 +221,21 @@ button {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
-.main-cont {
-  background: url(../../../assets/images/hero__background.png);
+.footer__bottom img {
+  cursor: pointer;
+}
+
+.footer__bottom::after {
+  content: "";
+  position: absolute;
+  background: #182d42;
+  opacity: 0.2;
+  height: 0.14rem;
+  width: 83vw;
+  top: -1rem;
+  left: 0;
 }
 /*# sourceMappingURL=index.css.map */
