@@ -31,16 +31,7 @@ button {
 }
 
 .header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
   z-index: 2;
-}
-
-.header__container {
-  max-width: 120rem;
-  margin: 0 auto;
 }
 
 .header__row {
