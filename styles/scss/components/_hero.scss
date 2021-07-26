@@ -1,14 +1,9 @@
 .hero {
-    position: relative;
+    // position: relative;
     z-index: 1;
     min-height: 100vh;
-    background-size: cover;
-    &__container {
-        max-width: 120rem;
-        margin: 0 auto;
-        padding-top: 28vh;
-    }
     &__title {
+        padding-top: 28vh;
         @include font("Futura PT", 9.6rem, 700, 12.3rem, #182d42);
     }
 

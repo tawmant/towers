@@ -5,8 +5,7 @@
         display: flex;
         justify-content: space-between;
     }
-
-    &__logo{
+    &__logo {
         width: 116px;
         object-fit: contain;
     }
@@ -19,7 +18,7 @@
             .list-item {
                 margin-right: 3rem;
                 a {
-                    @include font("Cabin", 1.6rem, 500, 1.9rem, #182d42);
+                    @include font("Gilroy", 1.6rem, 500, 1.9rem, #182d42);
                 }
             }
         }
