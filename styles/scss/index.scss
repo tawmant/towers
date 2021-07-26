@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap");
 
-@import "./mixins";
-@import "./base";
+@import "mixins";
+@import "base";
 
-@import "./components/header";
-@import "./components/hero";
-@import "./components/footer";
+@import "components/header";
+@import "components/hero";
+@import "components/footer";
+@import "components/main-cont";
