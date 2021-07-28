@@ -1,16 +1,36 @@
 .location {
+    text-align: center;
     margin: 10rem 0;
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__title {
         @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
         margin-bottom: 3rem;
     }
     &__description {
-        @include font("Gilroy", 1.5rem, 400, 2rem, #4B4B4B);
+        @include font("Gilroy", 1.5rem, 400, 2rem, #4b4b4b);
         max-width: 40rem;
+        margin-bottom: 2rem;
     }
     &__right {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (min-width: 960px) {
+    .location {
+        text-align: left;
+        &__row {
+            display: flex;
+            flex-direction: row;
+        }
+        &__description {
+            margin-bottom: 0;
+        }
     }
 }

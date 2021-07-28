@@ -4,7 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Titan</title>
+		<link rel="icon" href="./assets/images/logo.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 		<link
 			rel="stylesheet"
 			href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css"
@@ -20,9 +29,13 @@
 		<main>
 			<div class="main-cont">
 				<header class="header">
+					<div class="menu-toggle">
+						<i class="fas fa-bars"></i>
+						<i class="fas fa-times"></i>
+					</div>
 					<div class="header__container container">
-						<div class="header__row row">
-							<div class="header__logo col-1">
+						<div class="header__row">
+							<div class="header__logo">
 								<a href="./index.html">
 									<img
 										src="assets/images/logo.png"
@@ -30,7 +43,7 @@
 									/>
 								</a>
 							</div>
-							<nav class="header__nav col-8">
+							<nav class="header__nav">
 								<ul class="nav-list">
 									<li class="list-item">
 										<a href="">О нас</a>
@@ -55,16 +68,16 @@
 									</li>
 								</ul>
 							</nav>
-							<div class="header__btn-wrapper col-2">
+							<div class="header__btn-wrapper">
 								<button>Заказать звонок</button>
 							</div>
 						</div>
 					</div>
 				</header>
-				<section class="hero container">
+				<section class="hero">
 					<div class="hero__container container">
-						<div class="row">
-							<h1 class="hero__title col-8">
+						<div class="hero__content">
+							<h1 class="hero__title">
 								Старт продаж ЖК “Medina Towers”
 							</h1>
 						</div>
@@ -72,9 +85,248 @@
 				</section>
 			</div>
 
+			<section class="data">
+				<div class="container">
+					<div class="data__row row">
+						<div class="data__left col-6">
+							<img
+								src="./assets/images/data-img.png"
+								alt="building"
+							/>
+						</div>
+						<div class="data__right col-6">
+							<div class="right-wrapper">
+								<h2 class="data__title">ЖК “Medina Towers”</h2>
+								<ul class="data__items">
+									<li class="data__item">
+										<p>200</p>
+										<span>Квартир</span>
+									</li>
+									<li class="data__item">
+										<p>50</p>
+										<span>Помещений</span>
+									</li>
+									<li class="data__item">
+										<p>20 000</p>
+										<span>Площадь</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="container build-steps pt-5 pb-5">
+				<h2 class="build-steps__title">
+					Ход строительства<br />
+					ЖК “Medina Towers”
+				</h2>
+
+				<div
+					class="
+						build-steps__steps
+						d-flex
+						flex-wrap
+						justify-content-center justify-content-md-between
+						mt-5
+						pt-5
+					"
+				>
+					<div class="build-steps__step">
+						<div class="build-steps__indicator">
+							<div
+								class="build-steps__indicator__circle active"
+							></div>
+							<div class="build-steps__indicator__border"></div>
+						</div>
+
+						<div class="build-steps__desc">
+							<h3 class="m-0 mt-4">Июнь 2021</h3>
+							<p class="m-0">Начало строительства жилого дома</p>
+						</div>
+					</div>
+
+					<div class="build-steps__step">
+						<div class="build-steps__indicator">
+							<div class="build-steps__indicator__circle"></div>
+							<div class="build-steps__indicator__border"></div>
+						</div>
+
+						<div class="build-steps__desc">
+							<h3 class="m-0 mt-4">Июнь 2021</h3>
+							<p class="m-0">Начало строительства жилого дома</p>
+						</div>
+					</div>
+
+					<div class="build-steps__step">
+						<div class="build-steps__indicator">
+							<div class="build-steps__indicator__circle"></div>
+							<div class="build-steps__indicator__border"></div>
+						</div>
+
+						<div class="build-steps__desc">
+							<h3 class="m-0 mt-4">Июнь 2021</h3>
+							<p class="m-0">Начало строительства жилого дома</p>
+						</div>
+					</div>
+
+					<div class="build-steps__step">
+						<div class="build-steps__indicator">
+							<div class="build-steps__indicator__circle"></div>
+							<div class="build-steps__indicator__border"></div>
+						</div>
+
+						<div class="build-steps__desc">
+							<h3 class="m-0 mt-4">Июнь 2021</h3>
+							<p class="m-0">Начало строительства жилого дома</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container apartment-select mt-5 mb-5 pt-5 pb-5">
+				<h2 class="m-0 mb-5 apartment-select__main-title">
+					Выберите свою квартиру
+				</h2>
+
+				<div class="d-flex flex-column flex-md-row">
+					<div class="apartment-select__dashboard col-12 col-md-6">
+						<div class="mt-5 mb-5">
+							<h3 class="apartment-select__subtitles m-0 mb-3">
+								Количество комнат
+							</h3>
+							<div class="apartment-select__rooms-amounts">
+								<button
+									value="room_1"
+									class="
+										apartment-select__amount
+										apartment-select__btn
+										apartment-select__active-btn
+										col-4
+									"
+								>
+									1-х комнатные
+								</button>
+								<button
+									value="room_2"
+									class="
+										apartment-select__amount
+										apartment-select__btn
+										col-4
+									"
+								>
+									2-х комнатные
+								</button>
+								<button
+									value="room_3"
+									class="
+										apartment-select__amount
+										apartment-select__btn
+										col-4
+									"
+								>
+									3-х комнатные
+								</button>
+							</div>
+						</div>
+
+						<div class="mt-5 mb-5">
+							<h3 class="m-0 mb-3">Площадь квартир</h3>
+							<div class="apartment-select__rooms-areas"></div>
+						</div>
+					</div>
+
+					<img
+						src="./assets/images/apartments/1kv 38.68.png"
+						class="apartment-select__selected-image col-12 col-md-6"
+						alt=""
+					/>
+				</div>
+			</div>
+
+			<section class="video">
+				<div class="container">
+					<div class="video__column">
+						<h2 class="video__title">
+							Посмотрите ролик о ЖК “Medina Towers”
+						</h2>
+						<p class="video__description">
+							Современный, стильный комплекс у подножья гор, с
+							красивым панорамным видом.
+						</p>
+						<video width="320" height="240" controls>
+							<source
+								src="https://youtu.be/NTEaYP9kxFE?list=PLQzBJgojWxHPVpMf78pYyEqqqVdPDUDzQ"
+								poster="./assets/images/logo.png"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section class="slider">
+				<div class="container">
+					<h2 class="slider__title">Архитектура</h2>
+					<div class="slider__wrapper">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/hero__background.png"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/instagram.png"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/hero__background.png"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<span class="swiper-prev">
+							<svg
+								width="18"
+								height="16"
+								viewBox="0 0 18 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M7.5 15.5L8.5575 14.4425L2.8725 8.75H18V7.25H2.8725L8.5575 1.5575L7.5 0.5L0 8L7.5 15.5Z"
+									fill="#C71616"
+								/>
+							</svg>
+						</span>
+						<span class="swiper-next">
+							<svg
+								width="18"
+								height="16"
+								viewBox="0 0 18 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M10.5 0.5L9.4275 1.54475L15.1125 7.25H0V8.75H15.1125L9.4275 14.4298L10.5 15.5L18 8L10.5 0.5Z"
+									fill="#C71616"
+								/>
+							</svg>
+						</span>
+					</div>
+				</div>
+			</section>
+
 			<section class="location">
 				<div class="container">
-					<div class="row">
+					<div class="location__row row">
 						<div class="location__left col-6">
 							<h2 class="location__title">
 								Приходите в отдел продаж
@@ -92,12 +344,9 @@
 						</div>
 						<div class="location__right col-6">
 							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.9147670266348!2d74.5882578149786!3d42.87464311044206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dec2f84b71%3A0x29c1629c788878ab!2sBishkek%20Park!5e0!3m2!1sen!2skg!4v1627287008621!5m2!1sen!2skg"
-								width="400"
-								height="300"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
+								src="https://www.google.com/maps/d/u/0/embed?mid=1O23CnX90k27kioGs1drO7c9VtPaLYdQn"
+								width="640"
+								height="480"
 							></iframe>
 						</div>
 					</div>
@@ -106,15 +355,15 @@
 
 			<section class="form">
 				<div class="form__container container">
-					<div class="form__row row">
-						<h2 class="form__title col-8">
+					<div class="form__row">
+						<h2 class="form__title">
 							Для личной консультации, укажите ваши контакты
 						</h2>
-						<p class="form__description col-3">
+						<p class="form__description">
 							Менеджер свяжется с вами и поможет сделать
 							правильный выбор.
 						</p>
-						<form action="" class="form__form col-12">
+						<form action="" class="form__form">
 							<input
 								class="form__input"
 								type="text"
@@ -160,8 +409,24 @@
 				</div>
 			</div>
 		</footer>
+
 		<script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
 		<script src="./utils/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 		<script src="./utils/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper-container', {
+				// Optional parameters
+				direction: 'horizontal',
+				// loop: true,
+				navigation: {
+					nextEl: '.swiper-next',
+					prevEl: '.swiper-prev',
+				},
+			});
+		</script>
+
+		<script src="./js/index.js"></script>
+		<script src="./js/apartment-select.js"></script>
 	</body>
 </html>

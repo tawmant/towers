@@ -1,8 +1,23 @@
 html {
-    font-size: 10px;
+    font-size: 6px;
+    @media (min-width: 576) {
+        font-size: 8px;
+    }
+    @media (min-width: 768px) {
+        font-size: 10px;
+    }
 }
 
-ul, p, h1, h2, h3, h4, h5, h6, body, div {
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,4 +45,8 @@ button {
 
 input {
     outline: none;
+}
+
+.row {
+    flex-wrap: wrap;
 }

@@ -1,0 +1,43 @@
+.build-steps {
+  &__steps {
+    grid-gap: 6rem;
+  }
+
+  &__title {
+    text-align: center;
+    @include font("Futura PT", 6.4rem, 600, 8.2rem, #182d42);
+  }
+
+  &__indicator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 24px;
+
+    &__circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #cae9f9;
+
+      &.active {
+        background: #c71616;
+      }
+    }
+
+    &__border {
+      width: calc(100% - 48px);
+      border-bottom: 2px dashed #182d424b;
+    }
+  }
+
+  &__desc {
+    h3 {
+      @include font("Futura PT", 2.4rem, 600, 3rem, #182d42);
+    }
+
+    p {
+      @include font("Futura PT", 1.6rem, 400, 2.6rem, #4b4b4b);
+    }
+  }
+}

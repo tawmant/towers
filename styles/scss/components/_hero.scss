@@ -1,10 +1,29 @@
 .hero {
     // position: relative;
     z-index: 1;
-    min-height: 100vh;
-    &__title {
-        padding-top: 28vh;
-        @include font("Futura PT", 9.6rem, 700, 12.3rem, #182d42);
+    &__content {
+        padding-top: 13vh;
     }
+    &__title {
+        max-width: 65%;
+        @include font("Futura PT", 7.6rem, 700, 12.3rem, #182d42);
+    }
+}
 
+@media (min-width: 768px) {
+    .hero {
+        &__title {
+            max-width: 65%;
+            @include font("Futura PT", 4.6rem, 700, 5.3rem, #182d42);
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .hero {
+        &__title {
+            max-width: 65%;
+            @include font("Futura PT", 6.6rem, 700, 10.3rem, #182d42);
+        }
+    }
 }

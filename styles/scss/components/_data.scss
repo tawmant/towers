@@ -1,0 +1,73 @@
+.data {
+    padding: 8rem 0;
+    &__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-bottom: 2rem;
+        }
+    }
+    .right-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 6rem;
+    }
+    &__title {
+        @include font("Futura PT", 4rem, 600, 6rem, #182d42);
+    }
+    &__items {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 8rem;
+        p {
+            @include font("Futura PT", 3rem, 600, 4rem, #c71616);
+        }
+        span {
+            @include font("Gilroy", 1.4rem, 400, 2rem, #4b4b4b);
+        }
+    }
+    &__items li:nth-child(2) {
+        position: relative;
+    }
+    &__items li:nth-child(2)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -4rem;
+        height: 6rem;
+        width: 1px;
+        background: #182D42;
+    }
+    &__items li:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -4rem;
+        height: 6rem;
+        width: 1px;
+        background: #182D42;
+    }
+}
+
+@media (min-width: 960px) {
+    .data {
+        &__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
