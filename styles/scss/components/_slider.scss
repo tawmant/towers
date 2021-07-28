@@ -1,0 +1,52 @@
+.slider {
+    background: #cae9f9;
+    padding: 8rem 0;
+
+    &__title {
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
+        margin-bottom: 5rem;
+    }
+    .swiper-container {
+        max-width: 90rem;
+        max-height: 45rem;
+
+        margin: 0 4rem;
+    }
+    .container {
+        position: relative;
+    }
+    // &__wrapper {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     padding: 0 4rem;
+    // }
+    .swiper-prev {
+        left: 0;
+        top: 50%;
+        position: absolute;
+        width: 4rem;
+        background: #fff;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+    .swiper-next {
+        top: 50%;
+        right: 0;
+        position: absolute;
+        width: 4rem;
+        background: #fff;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .slider {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.apartment-select{
+  &__main-title{
+    @include font("Futura PT", 6.4rem, 600, 8.2rem, #182d42);
+  }
+
+  &__subtitle{
+    @include font("Futura PT", 2.4rem, 500, 3.1rem, #182d42);
+  }
+
+  &__rooms-areas,
+  &__rooms-amounts{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      grid-gap: 1rem;
+  }
+
+  &__btn{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ADADAD;
+    @include font("Futura PT", 1.6rem, 400, 1.9rem, #182d42);
+    padding: 0;
+  }
+
+  &__amount{
+    width: 19rem;
+    height: 4.8rem;
+  }
+
+  &__area{
+    width: 12.3rem;
+    height: 4.8rem;
+  }
+
+  &__active-btn{
+    background: #182D42;
+    border: 1px solid #182D42;
+    @include font("Futura PT", 1.6rem, 600, 1.9rem, #fff);
+  }
+
+  &__selected-image{
+    min-height: 47rem;
+    object-fit: contain;
+  }
+}

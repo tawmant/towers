@@ -6,6 +6,9 @@
     &__logo {
         display: flex;
         justify-content: center;
+        img {
+            max-width: 15rem;
+        }
     }
     &__nav {
         display: flex;
@@ -33,6 +36,7 @@
         img {
             cursor: pointer;
         }
+        margin-bottom: 2rem;
     }
     &__bottom::after {
         content: "";

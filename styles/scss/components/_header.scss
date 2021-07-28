@@ -1,27 +1,89 @@
 .header {
+    &__nav {
+        height: 7.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav-list {
+            list-style: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100vh;
+            background-color: #cae9f9;
+            padding: 4.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 1250;
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+
+            a {
+                @include font("Gilroy", 3rem, 500, 1.9rem, #182d42);
+            }
+        }
+    }
+
+    &__nav::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity 0.5s;
+    }
+
+    .menu-toggle {
+        position: fixed;
+        color: #182d42;
+        font-size: 3rem;
+        top: 5rem;
+        transform: translateY(-50%);
+        right: 2.5rem;
+        cursor: pointer;
+        z-index: 1500;
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+    .open .fa-times {
+        display: block;
+    }
+
+    .open .fa-bars {
+        display: none;
+    }
+
+    .open .nav::before {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    .fa-times {
+        display: none;
+    }
     width: 100%;
     z-index: 2;
     &__row {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__logo {
         width: 116px;
         object-fit: contain;
-    }
-    &__nav {
-        display: flex;
-        align-content: center;
-        .nav-list {
-            display: flex;
-            align-items: center;
-            .list-item {
-                margin-right: 3rem;
-                a {
-                    @include font("Gilroy", 1.6rem, 500, 1.9rem, #182d42);
-                }
-            }
-        }
     }
     &__btn-wrapper {
         display: flex;
@@ -30,6 +92,43 @@
             background: rgba(24, 45, 66, 0.1);
             border: 1px solid #182d42;
             padding: 1.4rem 3.2rem;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .header {
+        .menu-toggle {
+            display: none;
+        }
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__nav {
+            display: flex;
+            align-content: center;
+            .nav-list {
+                .list-item {
+                    margin-right: 3rem;
+                    a {
+                        @include font("Gilroy", 1.6rem, 500, 1.9rem, #182d42);
+                    }
+                }
+            }
+        }
+        .nav-list {
+            position: initial;
+            width: initial;
+            height: initial;
+            background-color: transparent;
+            padding: 0;
+            justify-content: initial;
+            flex-direction: row;
+            transform: initial;
+            transition: initial;
         }
     }
 }
