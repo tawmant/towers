@@ -1,0 +1,85 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3350;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+	background-color: rgba(13, 13, 13, 0.4);
+    &__dialog {
+        max-width: 55rem;
+        margin: 14rem auto;
+    }
+    &__content {
+        position: relative;
+        width: 100%;
+        padding: 6rem 5rem 3.5rem 5rem;
+        background-color: #fff;
+        border: 0.1rem solid rgba(0, 0, 0, 0.2);
+        max-height: 80vh;
+        overflow-y: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            display: flex;
+            align-items: center;
+            @include font("Gilroy", 1.7rem, 600, 2rem, #182d42);
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 1.2rem;
+        right: 2.2rem;
+        font-size: 1.5rem;
+        color: #000;
+        opacity: 0.5;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+    }
+    &__title {
+        @include font("Futura PT", 2rem, 700, 3rem, #182d42);
+    }
+    &__description {
+        @include font("Gilroy", 1.5rem, 500, 2rem, #4b4b4b);
+    }
+    &__input {
+        margin: 2rem auto 2rem auto;
+        // max-width: 28rem;
+        height: 5rem;
+        border: none;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+        font-size: 1.5rem;
+        padding: 0 12rem;
+        padding: 0 20rem 0 1rem;
+        outline: 0;
+        text-align: left;
+        color: #000;
+    }
+    &__btn {
+        @include font("Gilroy", 1.6rem, 600, 1.9rem, #fff);
+        background: #182d42;
+        padding: 1.4rem 3.7rem;
+        margin: 0.5rem;
+        border: #182d42;
+        max-width: 25rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

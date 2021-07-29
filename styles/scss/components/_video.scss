@@ -1,0 +1,63 @@
+.video {
+    background: #cae9f9;
+    padding: 6rem 0 11rem 0;
+    text-align: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    &__title {
+        @include font("Futura PT", 5.4rem, 600, 7.2rem, #182d42);
+        max-width: 50%;
+        margin: 0 auto 2rem auto;
+    }
+    &__description {
+        @include font("Gilroy", 1.6rem, 500, 1.8rem, #4b4b4b);
+        margin-bottom: 4rem;
+    }
+    &__four {
+        position: absolute;
+        right: 17rem;
+        top: 7.2rem;
+        width: 4.9rem;
+        height: 2.5rem;
+    }
+    &__inner {
+        position: relative;
+    }
+
+    .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    &-player {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    video:focus {
+        outline: none;
+    }
+    &__img {
+        position: relative;
+        img:first-child {
+            width: 72rem;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 4rem;
+        cursor: pointer;
+    }
+}

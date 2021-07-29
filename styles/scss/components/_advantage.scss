@@ -1,0 +1,27 @@
+.advantage {
+    padding: 7rem 0;
+    &__title {
+        @include font("Futura PT", 4.4rem, 600, 5.2rem, #182d42);
+        margin-bottom: 2rem;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item__title {
+        @include font("Futura PT", 2rem, 600, 3rem, #182d42);
+        margin-top: 2rem;
+    }
+    .item__description {
+        @include font("Gilroy", 1.6rem, 500, 2.1rem, #585858);
+    }
+}
+
+@media (max-width: 600px) {
+    .advantage {
+        &__item {
+            width: 50%;
+        }
+    }
+}

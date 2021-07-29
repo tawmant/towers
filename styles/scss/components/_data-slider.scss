@@ -1,0 +1,65 @@
+.data-slider {
+    padding: 10rem 0;
+    &__title {
+        @include font("Futura PT", 5rem, 450, 6rem, #182d42);
+    }
+    &__description {
+        @include font("Gilroy", 1.5rem, 400, 2rem, #4b4b4b);
+    }
+    ::-webkit-scrollbar {
+        width: 3.1rem; /* ширина для вертикального скролла */
+        height: 0.2rem; /* высота для горизонтального скролла */
+        background-color: #c4c4c4;
+        scrollbar-width: 30rem;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #d72f2f;
+        border-radius: 9em;
+        height: 0.3rem;
+    }
+    &__left {
+        div {
+            margin-left: 20rem;
+        }
+    }
+    &__list {
+        overflow-x: auto;
+        width: auto;
+        max-height: 64rem;
+        white-space: nowrap;
+        object-fit: cover;
+        .list-item {
+            display: inline-block;
+            margin-right: 2rem;
+            img {
+                display: inline-block;
+                width: 38rem;
+                height: 50rem;
+            }
+            &__description {
+                @include font("Futura PT", 2rem, 450, 3rem, #182d42);
+                margin: 2.5rem 0 7rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .data-slider {
+        text-align: center;
+        &__row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__left {
+            div {
+                margin-left: 0rem;
+            }
+        }
+        &__description {
+            margin: 1rem 0;
+        }
+    }
+}

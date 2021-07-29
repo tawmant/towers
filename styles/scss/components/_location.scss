@@ -28,6 +28,7 @@
         &__row {
             display: flex;
             flex-direction: row;
+            align-items: flex-start;
         }
         &__description {
             margin-bottom: 0;
