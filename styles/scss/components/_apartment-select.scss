@@ -40,7 +40,7 @@
   }
 
   &__selected-image {
-    width: 75%;
+    width: 58%;
     min-height: 47rem;
     object-fit: contain;
   }
@@ -52,7 +52,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 105%;
     }
   }
 }

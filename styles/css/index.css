@@ -466,7 +466,7 @@ input {
 }
 
 .apartment-select__selected-image {
-  width: 75%;
+  width: 58%;
   min-height: 47rem;
   object-fit: contain;
 }
@@ -476,7 +476,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 105%;
   }
 }
 
