@@ -17,6 +17,9 @@
         justify-content: center;
         margin-left: 6rem;
     }
+    &__right {
+        width: 75%;
+    }
     &__title {
         @include font("Futura PT", 4rem, 600, 6rem, #182d42);
     }
@@ -39,22 +42,22 @@
         position: relative;
     }
     &__items li:nth-child(2)::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: -4rem;
         height: 6rem;
         width: 1px;
-        background: #182D42;
+        background: #182d42;
     }
     &__items li:nth-child(2)::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -4rem;
         height: 6rem;
         width: 1px;
-        background: #182D42;
+        background: #182d42;
     }
 }
 
@@ -68,6 +71,9 @@
             img {
                 margin-bottom: 0;
             }
+        }
+        &__right {
+            width: 50%;
         }
     }
 }
