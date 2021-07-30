@@ -459,6 +459,7 @@ input {
 }
 
 .apartment-select__selected-image {
+  width: 75%;
   min-height: 47rem;
   object-fit: contain;
 }
@@ -637,9 +638,21 @@ input {
   }
 }
 
-.history .mySwiper,
-.history .swiper-pagination {
-  background: red;
+.history .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #f06a44;
+  width: 30rem;
+}
+
+.history .swiper-pagination-progressbar {
+  width: 30rem;
+}
+
+.history .swiper-container {
+  height: 100%;
+}
+
+.history .swiper-btn-prev {
+  z-index: 3345000;
 }
 
 .data-slider {
@@ -678,7 +691,11 @@ input {
 }
 
 .data-slider__left div {
-  margin-left: 20rem;
+  margin-left: 15rem;
+}
+
+.data-slider__text {
+  margin-right: 13rem;
 }
 
 .data-slider__list {

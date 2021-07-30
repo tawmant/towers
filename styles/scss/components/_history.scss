@@ -1,6 +1,15 @@
 .history {
-    .mySwiper,
-    .swiper-pagination {
-        background: red;
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background-color: #f06a44;
+        width: 30rem;
+    }
+    .swiper-pagination-progressbar {
+        width: 30rem;
+    }
+    .swiper-container {
+        height: 100%;
+    }
+    .swiper-btn-prev {
+        z-index: 3345000;
     }
 }
