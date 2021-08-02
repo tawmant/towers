@@ -64,9 +64,27 @@ inputs.forEach((item) => {
 	item.addEventListener('change', (e) => {
 		const value = e.target.value;
 		if (value.length > 0) {
-			item.style.borderBottom = '1px solid #182D42'
+			item.style.borderBottom = '1px solid #182D42';
 		} else {
-			item.style.borderBottom = '1px solid rgba(0, 0, 0, 0.2)'
+			item.style.borderBottom = '1px solid rgba(0, 0, 0, 0.2)';
 		}
+	});
+});
+
+// history slider
+
+const parentBtns = document.querySelector('.history__btns');
+btns = Array.from(parentBtns.querySelectorAll('.history__btn'));
+
+btns.forEach((btn) => {
+	btn.addEventListener('click', (e) => {
+		const target = e.target;
+		btns.forEach(item => {
+			if (item.getAttribute('aria-disabled') === 'true') {
+				item.children[0].setAttribute('stroke', '#D0D0D0');
+			} else {
+				item.children[0].setAttribute('stroke', '#C71616');
+			}
+		})
 	});
 });

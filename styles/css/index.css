@@ -653,21 +653,83 @@ input {
   }
 }
 
+.history {
+  padding: 7rem 0 9rem 0;
+}
+
 .history .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #f06a44;
-  width: 30rem;
+  width: 100%;
 }
 
 .history .swiper-pagination-progressbar {
-  width: 30rem;
+  width: 100%;
+  height: 0.2rem;
 }
 
-.history .swiper-container {
-  height: 100%;
+.history .swiper-wrapper {
+  margin-top: 2rem;
 }
 
-.history .swiper-btn-prev {
-  z-index: 3345000;
+.history .swiper-slide {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #4b4b4b;
+}
+
+.history__row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.history__title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 6rem;
+  color: #182d42;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+}
+
+.history .right-wrapper h3 {
+  font-family: "Futura PT", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4rem;
+  color: #182d42;
+}
+
+.history__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history__btns {
+  display: flex;
+}
+
+.history__btns div {
+  margin-right: 1rem;
+}
+
+@media (max-width: 960px) {
+  .history {
+    text-align: center;
+  }
+  .history__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .history__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
 }
 
 .data-slider {
