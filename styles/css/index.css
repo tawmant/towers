@@ -197,6 +197,7 @@ input {
     align-content: center;
   }
   .header__nav .nav-list .list-item {
+    cursor: pointer;
     margin-right: 2.3rem;
   }
   .header__nav .nav-list .list-item a {
@@ -327,7 +328,7 @@ input {
   right: -4rem;
   height: 6rem;
   width: .1rem;
-  background: #182d42;
+  background: #fff;
 }
 
 .data__items li:nth-child(2)::after {
@@ -337,7 +338,7 @@ input {
   left: -4rem;
   height: 6rem;
   width: .1rem;
-  background: #182d42;
+  background: #fff;
 }
 
 @media (min-width: 960px) {
@@ -369,7 +370,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 7.2rem;
-  color: #fff;
+  color: #d9a85d;
 }
 
 .build-steps__indicator {
@@ -625,7 +626,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 5.2rem;
-  color: #fff;
+  color: #D9A85D;
   margin-bottom: 2rem;
 }
 
@@ -709,7 +710,7 @@ input {
   font-size: 5rem;
   font-weight: 600;
   line-height: 6rem;
-  color: #fff;
+  color: #d9a85d;
   margin-bottom: 6rem;
   margin-left: 2rem;
 }
@@ -818,7 +819,7 @@ input {
 
 .data-slider__list .list-item img {
   display: inline-block;
-  width: 38rem;
+  width: 33rem;
   height: 50rem;
 }
 
@@ -868,7 +869,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 6.2rem;
-  color: #D9A85D;
+  color: #d9a85d;
   margin-bottom: 3rem;
 }
 
@@ -888,6 +889,13 @@ input {
   align-items: center;
 }
 
+.location__fake-img {
+  cursor: pointer;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
 @media (min-width: 960px) {
   .location {
     text-align: left;
@@ -900,6 +908,59 @@ input {
   .location__description {
     margin-bottom: 0;
   }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.architecture {
+  padding: 5rem 0 9rem 0;
+}
+
+.architecture__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.architecture__title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+  color: #d9a85d;
+  margin-bottom: 4rem;
+}
+
+.architecture__description {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #fff;
+  max-width: 30%;
+}
+
+.architecture__item {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+.architecture__item .item__description {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #fff;
+  margin-left: 2rem;
 }
 
 .form {
@@ -920,7 +981,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 6.2rem;
-  color: #fff;
+  color: #D9A85D;
 }
 
 .form__description {
@@ -1010,8 +1071,7 @@ input {
 .footer__nav .nav-list {
   width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .footer__nav .nav-list .list-item a {
@@ -1024,6 +1084,10 @@ input {
 
 .footer__nav .nav-list:last-child {
   margin-right: 0;
+}
+
+.footer__about-us {
+  width: 36%;
 }
 
 .footer__bottom {

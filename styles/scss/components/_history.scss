@@ -33,7 +33,7 @@
         justify-content: space-around;
     }
     &__title {
-        @include font("Futura PT", 5rem, 600, 6rem, #fff);
+        @include font("Futura PT", 5rem, 600, 6rem, #d9a85d);
         margin-bottom: 6rem;
         margin-left: 2rem;
     }

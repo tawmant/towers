@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Titan</title>
-		<link rel="icon" href="./assets/images/logo.png" />
+		<link rel="icon" href="./assets/images/logog.svg" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css" />
@@ -29,7 +29,7 @@
 							<nav class="header__nav">
 								<ul class="nav-list">
 									<li class="list-item">
-										<a href="#data">Об объекте</a>
+										<a href="./about-us.html">О нас</a>
 									</li>
 									<li class="list-item">
 										<a href="#build-steps">Ход строительства</a>
@@ -38,16 +38,16 @@
 										<a href="#video">Видео объекта</a>
 									</li>
 									<li class="list-item">
-										<a href="">Детали квартир</a>
+										<a href="#data-slider">Детали квартир</a>
 									</li>
 									<li class="list-item">
-										<a href="">Галерея</a>
+										<a href="#slider">Галерея</a>
 									</li>
 									<li class="list-item">
-										<a href="">Планировки квартир</a>
+										<a href="#apartment-select">Планировки квартир</a>
 									</li>
 									<li class="list-item">
-										<a href="">Контакты</a>
+										<a href="#contacts">Контакты</a>
 									</li>
 								</ul>
 							</nav>
@@ -217,40 +217,20 @@
 						<div class="col-7">
 							<ul class="data-slider__list">
 								<li class="list-item">
-									<img src="./assets/images/data-slider1.png" alt="" />
+									<img src="./assets/images/data-slider1.png" alt="data-slider item" />
 									<p class="list-item__description">Архитектура</p>
 								</li>
 								<li class="list-item">
-									<img src="./assets/images/data-slider2.png" alt="" />
-									<p class="list-item__description">Материалы</p>
+									<img src="./assets/images/data-slider2.png" alt="data-slider item" />
+									<p class="list-item__description">Двор для всех</p>
 								</li>
 								<li class="list-item">
-									<img src="./assets/images/data-slider1.png" alt="" />
-									<p class="list-item__description">Архитектура</p>
+									<img src="./assets/images/data-slider3.png" alt="data-slider item" />
+									<p class="list-item__description">Парковка</p>
 								</li>
 								<li class="list-item">
-									<img src="./assets/images/data-slider2.png" alt="" />
-									<p class="list-item__description">Материалы</p>
-								</li>
-								<li class="list-item">
-									<img src="./assets/images/data-slider1.png" alt="" />
-									<p class="list-item__description">Архитектура</p>
-								</li>
-								<li class="list-item">
-									<img src="./assets/images/data-slider2.png" alt="" />
-									<p class="list-item__description">Материалы</p>
-								</li>
-								<li class="list-item">
-									<img src="./assets/images/data-slider2.png" alt="" />
-									<p class="list-item__description">Архитектура</p>
-								</li>
-								<li class="list-item">
-									<img src="./assets/images/data-slider2.png" alt="" />
-									<p class="list-item__description">Материалы</p>
-								</li>
-								<li class="list-item">
-									<img src="./assets/images/data-slider2.png" alt="" />
-									<p class="list-item__description">Материалы</p>
+									<img src="./assets/images/data-slider4.png" alt="data-slider item" />
+									<p class="list-item__description">Свежий воздух</p>
 								</li>
 							</ul>
 						</div>
@@ -258,9 +238,52 @@
 				</div>
 			</section>
 
-			<section class="slider">
+			<section class="architecture">
 				<div class="container">
-					<h2 class="slider__title">Архитектура</h2>
+					<h2 class="architecture__title">Архитектура</h2>
+					<p class="architecture__description">
+						Для возведения жилого комплекса применяются материалы, отвечающие современным требованиям:
+					</p>
+					<div class="architecture__row">
+						<div class="architecture__item">
+							<img src="./assets/images/architecture-item1.png" alt="architecture-item1" />
+							<p class="item__description">Cтены – газоблок</p>
+						</div>
+						<div class="architecture__item">
+							<img src="./assets/images/architecture-item2.png" alt="architecture-item1" />
+							<p class="item__description">
+								В изготовлении кровли дома используется рулонное покрытие, которое обеспечивает
+								водонепроницаемость и прочность при любых погодных условиях.
+							</p>
+						</div>
+						<div class="architecture__item">
+							<img src="./assets/images/architecture-item3.png" alt="architecture-item1" />
+							<p class="item__description">Каркас – монолитный газоблочный</p>
+						</div>
+						<div class="architecture__item">
+							<img src="./assets/images/architecture-item4.png" alt="architecture-item1" />
+							<p class="item__description">Фасад – фиброцеметные панели.</p>
+						</div>
+						<div class="architecture__item">
+							<img src="./assets/images/architecture-item5.png" alt="architecture-item1" />
+							<p class="item__description">
+								Используемые стекла для окон обладают превосходными теплосберегающими характеристиками:
+								удерживают тепло, когда на улице холодно и сохраняют прохладу в жаркую погоду.
+							</p>
+						</div>
+						<div class="architecture__item">
+							<img src="./assets/images/architecture-item6.png" alt="architecture-item1" />
+							<p class="item__description">
+								Фасад укреплен теплоизоляционным материалом на основе горных пород базальтовой группы.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="slider" id="slider">
+				<div class="container">
+					<h2 class="slider__title">Галерея</h2>
 					<div class="slider__wrapper">
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
@@ -307,7 +330,7 @@
 				</div>
 			</section>
 
-			<section class="container apartment-select mt-5 mb-5 pt-5 pb-5">
+			<section class="container apartment-select mt-5 mb-5 pt-5 pb-5" id="apartment-select">
 				<h2 class="m-0 mb-5 apartment-select__main-title">Выберите свою квартиру</h2>
 
 				<div class="d-flex flex-column flex-md-row">
@@ -361,17 +384,19 @@
 						</div>
 						<div class="location__right col-6">
 							<iframe
+								class="location__iframe hide"
 								src="https://yandex.ru/map-widget/v1/?um=constructor%3A695110ea067d0a2cbfc98ff28c510fec2f6d10e313d9fa10b151179f0039e964&amp;source=constructor"
 								width="500"
 								height="400"
 								frameborder="0"
 							></iframe>
+							<img class="location__fake-img" src="./assets/images/location-img.png" alt="map" />
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="form">
+			<section class="form" id="contacts">
 				<div class="form__container container">
 					<div class="form__row">
 						<h2 class="form__title">Для личной консультации, укажите ваши контакты</h2>
@@ -392,27 +417,27 @@
 					<img src="assets/images/logo.png" alt="logo" />
 				</div>
 				<nav class="footer__nav">
-					<ul class="nav-list row justify-content-center">
-						<li class="list-item col">
-							<a href="./about-us.html">Об объекте</a>
+					<ul class="nav-list">
+						<li class="list-item">
+							<a href="./about-us.html">О нас</a>
 						</li>
-						<li class="list-item col">
-							<a href="">Ход строительства</a>
+						<li class="list-item">
+							<a href="#build-steps">Ход строительства</a>
 						</li>
-						<li class="list-item col">
-							<a href="">Видео объекта</a>
+						<li class="list-item">
+							<a href="#video">Видео объекта</a>
 						</li>
-						<li class="list-item col">
-							<a href="">Детали квартир</a>
+						<li class="list-item">
+							<a href="#data-slider">Детали квартир</a>
 						</li>
-						<li class="list-item col">
-							<a href="">Галерея</a>
+						<li class="list-item">
+							<a href="#slider">Галерея</a>
 						</li>
-						<li class="list-item col">
-							<a href="">Планировки квартир</a>
+						<li class="list-item">
+							<a href="#apartment-select">Планировки квартир</a>
 						</li>
-						<li class="list-item col">
-							<a href="">Контакты</a>
+						<li class="list-item">
+							<a href="#contacts">Контакты</a>
 						</li>
 					</ul>
 				</nav>

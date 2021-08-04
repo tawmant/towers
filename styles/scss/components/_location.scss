@@ -7,7 +7,7 @@
         align-items: center;
     }
     &__title {
-        @include font("Futura PT", 4.4rem, 600, 6.2rem, #D9A85D);
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #d9a85d);
         margin-bottom: 3rem;
     }
     &__description {
@@ -19,6 +19,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &__fake-img {
+        cursor: pointer;
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
     }
 }
 
@@ -34,4 +40,12 @@
             margin-bottom: 0;
         }
     }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

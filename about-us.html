@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Titan</title>
-		<link rel="icon" href="./assets/images/logo.png" />
+		<link rel="icon" href="./assets/images/logog.svg" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css" />
@@ -29,25 +29,16 @@
 							<nav class="header__nav">
 								<ul class="nav-list">
 									<li class="list-item">
-										<a href="./about-us.html">Об объекте</a>
+										<a href="./index.html">На главную</a>
 									</li>
 									<li class="list-item">
-										<a href="">Ход строительства</a>
+										<a href="#advantage">Преимущества</a>
 									</li>
 									<li class="list-item">
-										<a href="">Видео объекта</a>
+										<a href="#location">Местоположение</a>
 									</li>
 									<li class="list-item">
-										<a href="">Детали квартир</a>
-									</li>
-									<li class="list-item">
-										<a href="">Галерея</a>
-									</li>
-									<li class="list-item">
-										<a href="">Планировки квартир</a>
-									</li>
-									<li class="list-item">
-										<a href="">Контакты</a>
+										<a href="#contacts">Контакты</a>
 									</li>
 								</ul>
 							</nav>
@@ -102,7 +93,7 @@
 				</div>
 			</section>
 
-			<section class="history">
+			<section class="history" id="advantage">
 				<div class="container">
 					<h2 class="history__title">Преимущества</h2>
 					<div class="history__row row">
@@ -211,7 +202,7 @@
 					</div>
 				</div>
 			</section>
-
+			
 			<section class="location">
 				<div class="container">
 					<div class="location__row row">
@@ -226,17 +217,19 @@
 						</div>
 						<div class="location__right col-6">
 							<iframe
+								class="location__iframe hide"
 								src="https://yandex.ru/map-widget/v1/?um=constructor%3A695110ea067d0a2cbfc98ff28c510fec2f6d10e313d9fa10b151179f0039e964&amp;source=constructor"
 								width="500"
 								height="400"
 								frameborder="0"
 							></iframe>
+							<img class="location__fake-img" src="./assets/images/location-img.png" alt="map" />
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="form">
+			<section class="form" id="contacts">
 				<div class="form__container container">
 					<div class="form__row">
 						<h2 class="form__title">Для личной консультации, укажите ваши контакты</h2>
@@ -257,18 +250,19 @@
 					<img src="assets/images/logo.png" alt="logo" />
 				</div>
 				<nav class="footer__nav">
-					<ul class="nav-list row justify-content-center">
-						<li class="list-item col"><a href="">О нас</a></li>
-						<li class="list-item col">
-							<a href="">Жилая недвижимость</a>
+					<ul class="nav-list footer__about-us">
+						<li class="list-item">
+							<a href="./index.html">На главную</a>
 						</li>
-						<li class="list-item col"><a href="">Коммерция</a></li>
-						<li class="list-item col">
-							<a href="">Покупателям</a>
+						<li class="list-item">
+							<a href="#advantage">Преимущества</a>
 						</li>
-						<li class="list-item col"><a href="">Партнерам</a></li>
-						<li class="list-item col"><a href="">Новости</a></li>
-						<li class="list-item col"><a href="">Контакты</a></li>
+						<li class="list-item">
+							<a href="#location">Местоположение</a>
+						</li>
+						<li class="list-item">
+							<a href="#contacts">Контакты</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="footer__bottom">

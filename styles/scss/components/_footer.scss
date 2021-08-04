@@ -18,8 +18,7 @@
         .nav-list {
             width: 80%;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             .list-item {
                 // margin-right: 3rem;
                 a {
@@ -30,6 +29,9 @@
         .nav-list:last-child {
             margin-right: 0;
         }
+    }
+    &__about-us {
+        width: 36%;
     }
     &__bottom {
         display: flex;

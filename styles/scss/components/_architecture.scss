@@ -1,0 +1,28 @@
+.architecture {
+    padding: 5rem 0 9rem 0;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__title {
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #d9a85d);
+        margin-bottom: 4rem;
+    }
+    &__description {
+        @include font("Gilroy", 1.5rem, 400, 2rem, #fff);
+        max-width: 30%;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        // width: 33%;
+        width: 40rem;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        .item__description {
+            @include font("Gilroy", 1.5rem, 400, 2rem, #fff);
+            margin-left: 2rem;
+        }
+    }
+}

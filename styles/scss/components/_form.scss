@@ -9,7 +9,7 @@
         align-items: center;
     }
     &__title {
-        @include font("Futura PT", 4.4rem, 600, 6.2rem, #fff);
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #D9A85D);
     }
     &__description {
         @include font("Gilroy", 1.4rem, 500, 2.4rem, #fff);
