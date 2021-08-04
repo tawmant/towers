@@ -1,31 +1,47 @@
 .history {
     padding: 7rem 0 9rem 0;
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background-color: #f06a44;
+        background-color: #d9a85d;
         width: 100%;
     }
     .swiper-pagination-progressbar {
         width: 100%;
         height: 0.2rem;
+        margin-top: 4.5rem;
     }
     .swiper-wrapper {
         margin-top: 2rem;
+        display: flex;
+        p {
+            margin-bottom: 0.5rem;
+        }
     }
     .swiper-slide {
-        @include font("Gilroy", 1.6rem, 400, 2rem, #4b4b4b);
+        @include font("Gilroy", 1.6rem, 400, 2rem, #fff);
+        height: 100%;
+    }
+    .mySwiper2 {
+        .swiper-img {
+            height: 37rem;
+            img {
+                object-fit: cover;
+            }
+        }
     }
     &__row {
         display: flex;
         justify-content: space-around;
     }
     &__title {
-        @include font("Futura PT", 5rem, 600, 6rem, #182d42);
-        margin-bottom: 4rem;
+        @include font("Futura PT", 5rem, 600, 6rem, #fff);
+        margin-bottom: 6rem;
         margin-left: 2rem;
     }
     .right-wrapper {
         h3 {
-            @include font("Futura PT", 3rem, 600, 4rem, #182d42);
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+            @include font("Futura PT", 3rem, 600, 4rem, #fff);
         }
     }
     &__right {

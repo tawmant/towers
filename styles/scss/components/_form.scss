@@ -1,5 +1,6 @@
 .form {
-    background: #cae9f9;
+    background: url("../../../assets/images/bg-videoSect.png") center no-repeat;
+    background-size: cover;
     padding: 6.8rem 0;
     text-align: center;
     &__row {
@@ -8,10 +9,10 @@
         align-items: center;
     }
     &__title {
-        @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #fff);
     }
     &__description {
-        @include font("Gilroy", 1.4rem, 500, 2.4rem, #4b4b4b);
+        @include font("Gilroy", 1.4rem, 500, 2.4rem, #fff);
         margin: 3rem 0 5rem 0;
     }
     &__form {
@@ -21,18 +22,17 @@
     }
     &__input {
         border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        background: #cae9f9;
+        border-bottom: .1 solid rgba(0, 0, 0, 0.2);
         padding: 1.3rem 16rem 1.4rem 2rem;
         margin-right: 4rem;
         @include font("Gilroy", 1.7rem, 500, 1.9rem, #4b4b4b);
     }
     &__btn {
         @include font("Gilroy", 1.6rem, 600, 1.9rem, #fff);
-        background: #182d42;
+        background: #D9A85D;
         padding: 1.4rem 3.7rem;
         margin: .5rem;
-        border: #182d42;
+        border: .1rem solid #D9A85D;
         max-width: 25rem;
     }
 }

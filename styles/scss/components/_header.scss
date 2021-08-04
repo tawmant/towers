@@ -12,7 +12,7 @@
             left: 0;
             width: 80%;
             height: 100vh;
-            background-color: #cae9f9;
+            background-color: #1E1E1E;
             padding: 4.4rem;
             display: flex;
             flex-direction: column;
@@ -22,11 +22,10 @@
             transition: transform 0.5s;
 
             a {
-                @include font("Gilroy", 3rem, 500, 1.9rem, #182d42);
+                @include font("Gilroy", 3rem, 500, 1.9rem, #ffffff);
             }
         }
     }
-
     &__nav::before {
         content: "";
         position: fixed;
@@ -39,10 +38,12 @@
         transform: scale(0);
         transition: opacity 0.5s;
     }
-
+    &__logo {
+        margin-right: 1rem;
+    }
     .menu-toggle {
         position: fixed;
-        color: #182d42;
+        color: #D9A85D;
         font-size: 3rem;
         top: 5rem;
         transform: translateY(-50%);
@@ -82,15 +83,16 @@
         flex-wrap: wrap;
     }
     &__logo {
-        width: 116px;
+        width: 14.6rem;
         object-fit: contain;
     }
     &__btn-wrapper {
         display: flex;
         align-items: center;
         button {
-            background: rgba(24, 45, 66, 0.1);
-            border: 1px solid #182d42;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #FFFFFF;
+            color: #fff;
             padding: 1.4rem 3.2rem;
         }
     }
@@ -112,9 +114,9 @@
             align-content: center;
             .nav-list {
                 .list-item {
-                    margin-right: 3rem;
+                    margin-right: 2.3rem;
                     a {
-                        @include font("Gilroy", 1.6rem, 500, 1.9rem, #182d42);
+                        @include font("Gilroy", 1.4rem, 500, 1.9rem, #FFFFFF);
                     }
                 }
             }

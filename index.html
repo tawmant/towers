@@ -6,18 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Titan</title>
 		<link rel="icon" href="./assets/images/logo.png" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css" />
 		<link href="./styles/css/index.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -32,31 +23,28 @@
 						<div class="header__row">
 							<div class="header__logo">
 								<a href="./index.html">
-									<img
-										src="assets/images/logo.png"
-										alt="logo"
-									/>
+									<img src="assets/images/logo.png" alt="logo" />
 								</a>
 							</div>
 							<nav class="header__nav">
 								<ul class="nav-list">
 									<li class="list-item">
-										<a href="./about-us.html">О нас</a>
+										<a href="#data">Об объекте</a>
 									</li>
 									<li class="list-item">
-										<a href="">Жилая недвижимость</a>
+										<a href="#build-steps">Ход строительства</a>
 									</li>
 									<li class="list-item">
-										<a href="">Коммерция</a>
+										<a href="#video">Видео объекта</a>
 									</li>
 									<li class="list-item">
-										<a href="">Покупателям</a>
+										<a href="">Детали квартир</a>
 									</li>
 									<li class="list-item">
-										<a href="">Партнерам</a>
+										<a href="">Галерея</a>
 									</li>
 									<li class="list-item">
-										<a href="">Новости</a>
+										<a href="">Планировки квартир</a>
 									</li>
 									<li class="list-item">
 										<a href="">Контакты</a>
@@ -72,22 +60,17 @@
 				<section class="hero">
 					<div class="hero__container container">
 						<div class="hero__content">
-							<h1 class="hero__title">
-								Старт продаж ЖК “Medina Towers”
-							</h1>
+							<h1 class="hero__title">Старт продаж ЖК “Medina Towers”</h1>
 						</div>
 					</div>
 				</section>
 			</div>
 
-			<section class="data">
-				<div class="container">
+			<section class="data" id="data">
+				<div class="container-fluid">
 					<div class="data__row row">
 						<div class="data__left col-6">
-							<img
-								src="./assets/images/data-img.png"
-								alt="building"
-							/>
+							<img src="./assets/images/data-img.png" alt="building" />
 						</div>
 						<div class="data__right col-6">
 							<div class="right-wrapper">
@@ -112,7 +95,7 @@
 				</div>
 			</section>
 
-			<div class="container build-steps pt-5 pb-5">
+			<section class="container build-steps pt-5 pb-5" id="build-steps">
 				<h2 class="build-steps__title">
 					Ход строительства<br />
 					ЖК “Medina Towers”
@@ -130,14 +113,12 @@
 				>
 					<div class="build-steps__step">
 						<div class="build-steps__indicator">
-							<div
-								class="build-steps__indicator__circle active"
-							></div>
+							<div class="build-steps__indicator__circle active"></div>
 							<div class="build-steps__indicator__border"></div>
 						</div>
 
 						<div class="build-steps__desc">
-							<h3 class="m-0 mt-4">Июнь 2021</h3>
+							<h3 class="m-0 mt-4 text-light">Июнь 2021</h3>
 							<p class="m-0">Начало строительства жилого дома</p>
 						</div>
 					</div>
@@ -178,23 +159,17 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<section class="video">
+			<section class="video" id="video">
 				<div class="container-sm">
 					<div class="video__inner">
-						<h2 class="video__title">
-							Посмотрите ролик о ЖК “Medina Towers”
-						</h2>
+						<h2 class="video__title">Посмотрите ролик о ЖК “Medina Towers”</h2>
 						<p class="video__description">
-							Современный, стильный комплекс у подножья гор, с
-							красивым панорамным видом.
+							Современный, стильный комплекс у подножья гор, с красивым панорамным видом.
 						</p>
 						<div class="video__img">
-							<img
-								src="./assets/images/video-background.png"
-								alt=""
-							/>
+							<img src="./assets/images/video-background.png" alt="" />
 							<img
 								src="./assets/images/video-player.png"
 								class="play-btn"
@@ -203,16 +178,9 @@
 						</div>
 						<div class="video-player" id="video-player">
 							<video width="100%" autoplay controls id="video">
-								<source
-									src="./assets/video/video.mp4"
-									type="video/mp4"
-								/>
+								<source src="./assets/video/video.mp4" type="video/mp4" />
 							</video>
-							<img
-								class="close-btn"
-								src="./assets/images/close.png"
-								onclick="stopVideo()"
-							/>
+							<img class="close-btn" src="./assets/images/close.png" onclick="stopVideo()" />
 						</div>
 					</div>
 					<svg
@@ -232,109 +200,57 @@
 				</div>
 			</section>
 
-			<section class="data-slider">
+			<section class="data-slider" id="data-slider">
 				<div class="container-fluid">
 					<div class="data-slider__row row">
 						<div class="data-slider__left col-5">
 							<div class="data-slider__text">
-								<h2 class="data-slider__title">
-									Квартиры в ЖК “Medina Towers”
-								</h2>
+								<h2 class="data-slider__title">Квартиры в ЖК “Medina Towers”</h2>
 								<p class="data-slider__description">
-									Современный, стильный комплекс у подножья
-									гор, с красивым панорамным видом. Мы
-									предлагаем продуманные ландшафтные
-									архитектурные решения в формировании
-									окружающего пространства. Все тренды в
-									современной архитектуре воплощены в нашем
-									комплексе, включая фасад, панорамное
-									остекление, HPL панели, открытые террасы с
-									видом на горы.
+									Современный, стильный комплекс у подножья гор, с красивым панорамным видом. Мы
+									предлагаем продуманные ландшафтные архитектурные решения в формировании окружающего
+									пространства. Все тренды в современной архитектуре воплощены в нашем комплексе,
+									включая фасад, панорамное остекление, HPL панели, открытые террасы с видом на горы.
 								</p>
 							</div>
 						</div>
 						<div class="col-7">
 							<ul class="data-slider__list">
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider1.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Архитектура
-									</p>
+									<img src="./assets/images/data-slider1.png" alt="" />
+									<p class="list-item__description">Архитектура</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider2.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Материалы
-									</p>
+									<img src="./assets/images/data-slider2.png" alt="" />
+									<p class="list-item__description">Материалы</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider1.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Архитектура
-									</p>
+									<img src="./assets/images/data-slider1.png" alt="" />
+									<p class="list-item__description">Архитектура</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider2.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Материалы
-									</p>
+									<img src="./assets/images/data-slider2.png" alt="" />
+									<p class="list-item__description">Материалы</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider1.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Архитектура
-									</p>
+									<img src="./assets/images/data-slider1.png" alt="" />
+									<p class="list-item__description">Архитектура</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider2.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Материалы
-									</p>
+									<img src="./assets/images/data-slider2.png" alt="" />
+									<p class="list-item__description">Материалы</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider2.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Архитектура
-									</p>
+									<img src="./assets/images/data-slider2.png" alt="" />
+									<p class="list-item__description">Архитектура</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider2.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Материалы
-									</p>
+									<img src="./assets/images/data-slider2.png" alt="" />
+									<p class="list-item__description">Материалы</p>
 								</li>
 								<li class="list-item">
-									<img
-										src="./assets/images/data-slider2.png"
-										alt=""
-									/>
-									<p class="list-item__description">
-										Материалы
-									</p>
+									<img src="./assets/images/data-slider2.png" alt="" />
+									<p class="list-item__description">Материалы</p>
 								</li>
 							</ul>
 						</div>
@@ -349,22 +265,13 @@
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<img
-										src="./assets/images/hero__background.png"
-										alt=""
-									/>
+									<img src="./assets/images/data-img.png" alt="" />
 								</div>
 								<div class="swiper-slide">
-									<img
-										src="./assets/images/instagram.png"
-										alt=""
-									/>
+									<img src="./assets/images/bg-data-slider.png" alt="" />
 								</div>
 								<div class="swiper-slide">
-									<img
-										src="./assets/images/hero__background.png"
-										alt=""
-									/>
+									<img src="./assets/images/data-img.png" alt="" />
 								</div>
 							</div>
 						</div>
@@ -378,7 +285,7 @@
 							>
 								<path
 									d="M7.5 15.5L8.5575 14.4425L2.8725 8.75H18V7.25H2.8725L8.5575 1.5575L7.5 0.5L0 8L7.5 15.5Z"
-									fill="#C71616"
+									fill="#D9A85D"
 								/>
 							</svg>
 						</span>
@@ -392,7 +299,7 @@
 							>
 								<path
 									d="M10.5 0.5L9.4275 1.54475L15.1125 7.25H0V8.75H15.1125L9.4275 14.4298L10.5 15.5L18 8L10.5 0.5Z"
-									fill="#C71616"
+									fill="#D9A85D"
 								/>
 							</svg>
 						</span>
@@ -401,53 +308,33 @@
 			</section>
 
 			<section class="container apartment-select mt-5 mb-5 pt-5 pb-5">
-				<h2 class="m-0 mb-5 apartment-select__main-title">
-					Выберите свою квартиру
-				</h2>
+				<h2 class="m-0 mb-5 apartment-select__main-title">Выберите свою квартиру</h2>
 
 				<div class="d-flex flex-column flex-md-row">
 					<div class="apartment-select__dashboard col-12 col-md-6">
 						<div class="mt-5 mb-5">
-							<h3 class="apartment-select__subtitles m-0 mb-3">
-								Количество комнат
-							</h3>
+							<h3 class="apartment-select__subtitles m-0 mb-3">Количество комнат</h3>
 							<div class="apartment-select__rooms-amounts">
 								<button
 									value="room_1"
 									class="
-										apartment-select__amount
-										apartment-select__btn
-										apartment-select__active-btn
+										apartment-select__amount apartment-select__btn apartment-select__active-btn
 										col-4
 									"
 								>
 									1-х комнатные
 								</button>
-								<button
-									value="room_2"
-									class="
-										apartment-select__amount
-										apartment-select__btn
-										col-4
-									"
-								>
+								<button value="room_2" class="apartment-select__amount apartment-select__btn col-4">
 									2-х комнатные
 								</button>
-								<button
-									value="room_3"
-									class="
-										apartment-select__amount
-										apartment-select__btn
-										col-4
-									"
-								>
+								<button value="room_3" class="apartment-select__amount apartment-select__btn col-4">
 									3-х комнатные
 								</button>
 							</div>
 						</div>
 
 						<div class="mt-5 mb-5">
-							<h3 class="m-0 mb-3">Площадь квартир</h3>
+							<h3 class="m-0 mb-3 apartment-select__subtitles">Площадь квартир</h3>
 							<div class="apartment-select__rooms-areas"></div>
 						</div>
 					</div>
@@ -464,18 +351,12 @@
 				<div class="container">
 					<div class="location__row row">
 						<div class="location__left col-6">
-							<h2 class="location__title">
-								Приходите в отдел продаж
-							</h2>
+							<h2 class="location__title">Приходите в отдел продаж</h2>
 							<p class="location__description">
-								Современный, стильный комплекс у подножья гор, с
-								красивым панорамным видом. Мы предлагаем
-								продуманные ландшафтные архитектурные решения в
-								формировании окружающего пространства. Все
-								тренды в современной архитектуре воплощены в
-								нашем комплексе, включая фасад, панорамное
-								остекление, HPL панели, открытые террасы с видом
-								на горы.
+								Современный, стильный комплекс у подножья гор, с красивым панорамным видом. Мы
+								предлагаем продуманные ландшафтные архитектурные решения в формировании окружающего
+								пространства. Все тренды в современной архитектуре воплощены в нашем комплексе, включая
+								фасад, панорамное остекление, HPL панели, открытые террасы с видом на горы.
 							</p>
 						</div>
 						<div class="location__right col-6">
@@ -493,27 +374,12 @@
 			<section class="form">
 				<div class="form__container container">
 					<div class="form__row">
-						<h2 class="form__title">
-							Для личной консультации, укажите ваши контакты
-						</h2>
-						<p class="form__description">
-							Менеджер свяжется с вами и поможет сделать
-							правильный выбор.
-						</p>
+						<h2 class="form__title">Для личной консультации, укажите ваши контакты</h2>
+						<p class="form__description">Менеджер свяжется с вами и поможет сделать правильный выбор.</p>
 						<form action="" class="form__form">
-							<input
-								class="form__input"
-								type="text"
-								placeholder="Ваше имя"
-							/>
-							<input
-								class="form__input"
-								type="tel"
-								placeholder="Номер телефона"
-							/>
-							<button type="submit" class="form__btn">
-								Связаться со мной
-							</button>
+							<input class="form__input" type="text" placeholder="Ваше имя" />
+							<input class="form__input" type="tel" placeholder="Номер телефона" />
+							<button type="submit" class="form__btn">Связаться со мной</button>
 						</form>
 					</div>
 				</div>
@@ -527,17 +393,27 @@
 				</div>
 				<nav class="footer__nav">
 					<ul class="nav-list row justify-content-center">
-						<li class="list-item col"><a href="">О нас</a></li>
 						<li class="list-item col">
-							<a href="">Жилая недвижимость</a>
+							<a href="./about-us.html">Об объекте</a>
 						</li>
-						<li class="list-item col"><a href="">Коммерция</a></li>
 						<li class="list-item col">
-							<a href="">Покупателям</a>
+							<a href="">Ход строительства</a>
 						</li>
-						<li class="list-item col"><a href="">Партнерам</a></li>
-						<li class="list-item col"><a href="">Новости</a></li>
-						<li class="list-item col"><a href="">Контакты</a></li>
+						<li class="list-item col">
+							<a href="">Видео объекта</a>
+						</li>
+						<li class="list-item col">
+							<a href="">Детали квартир</a>
+						</li>
+						<li class="list-item col">
+							<a href="">Галерея</a>
+						</li>
+						<li class="list-item col">
+							<a href="">Планировки квартир</a>
+						</li>
+						<li class="list-item col">
+							<a href="">Контакты</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="footer__bottom">
@@ -567,16 +443,8 @@
 							</svg>
 						</div>
 						<h3 class="modal__title">Закажите обратный звонок</h3>
-						<p class="modal__description">
-							Консультация нашего менеджера поможет Вам
-						</p>
-						<input
-							required
-							placeholder="Ваше имя"
-							name="name"
-							type="text"
-							class="modal__input"
-						/>
+						<p class="modal__description">Консультация нашего менеджера поможет Вам</p>
+						<input required placeholder="Ваше имя" name="name" type="text" class="modal__input" />
 						<input
 							required
 							placeholder="Ваш номер телефона"
@@ -588,11 +456,8 @@
 					</form>
 					<div class="whatsapp">
 						<a href="https://wa.me/996707407762"
-							><img
-								src="./assets/images/logos_whatsapp.png"
-								alt="logo whatsapps"
-							/>
-							Написать в Whatsapp</a
+							><img src="./assets/images/logos_whatsapp.png" alt="logo whatsapps" /> Написать в
+							Whatsapp</a
 						>
 					</div>
 				</div>

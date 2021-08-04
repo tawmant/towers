@@ -7,7 +7,8 @@
         display: flex;
         justify-content: center;
         img {
-            max-width: 15rem;
+            margin: 4rem 0;
+            max-width: 25rem;
         }
     }
     &__nav {
@@ -15,13 +16,14 @@
         justify-content: center;
         margin-bottom: 6.5rem;
         .nav-list {
+            width: 80%;
             display: flex;
             align-items: center;
             justify-content: center;
             .list-item {
-                margin-right: 3rem;
+                // margin-right: 3rem;
                 a {
-                    @include font("Gilroy", 1.4rem, 500, 1.9rem, #182d42);
+                    @include font("Gilroy", 1.4rem, 500, 1.9rem, #fff);
                 }
             }
         }
@@ -37,11 +39,12 @@
             cursor: pointer;
         }
         margin-bottom: 2rem;
+        color: #fff;
     }
     &__bottom::after {
         content: "";
         position: absolute;
-        background: #182d42;
+        background: #8C8C8C;
         opacity: 0.2;
         height: 0.14rem;
         width: 83vw;

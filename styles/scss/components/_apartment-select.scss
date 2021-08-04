@@ -1,11 +1,11 @@
 .apartment-select {
   padding: 10rem 0 !important;
   &__main-title {
-    @include font("Futura PT", 6.4rem, 600, 8.2rem, #182d42);
+    @include font("Futura PT", 6.4rem, 600, 8.2rem, #D9A85D);
   }
 
-  &__subtitle {
-    @include font("Futura PT", 2.4rem, 500, 3.1rem, #182d42);
+  &__subtitles {
+    @include font("Futura PT", 2rem, 600, 3.1rem, #fff);
   }
 
   &__rooms-areas,
@@ -13,13 +13,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    grid-gap: 1rem;
+    // grid-gap: 1rem;
   }
 
   &__btn {
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #adadad;
-    @include font("Futura PT", 1.6rem, 400, 1.9rem, #182d42);
+    border: .1rem solid #adadad;
+    @include font("Futura PT", 1.6rem, 400, 1.9rem, #fff);
     padding: 0;
   }
 
@@ -34,8 +34,8 @@
   }
 
   &__active-btn {
-    background: #182d42;
-    border: 1px solid #182d42;
+    background: #D9A85D;
+    border: .1rem solid #D9A85D;
     @include font("Futura PT", 1.6rem, 600, 1.9rem, #fff);
   }
 

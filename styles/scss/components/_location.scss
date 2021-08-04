@@ -7,11 +7,11 @@
         align-items: center;
     }
     &__title {
-        @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
+        @include font("Futura PT", 4.4rem, 600, 6.2rem, #D9A85D);
         margin-bottom: 3rem;
     }
     &__description {
-        @include font("Gilroy", 1.5rem, 400, 2rem, #4b4b4b);
+        @include font("Gilroy", 1.5rem, 400, 2rem, #fff);
         max-width: 40rem;
         margin-bottom: 2rem;
     }

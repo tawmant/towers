@@ -6,39 +6,39 @@
 
   &__title {
     text-align: center;
-    @include font("Futura PT", 6.4rem, 600, 8.2rem, #182d42);
+    @include font("Futura PT", 4.4rem, 600, 7.2rem, #fff);
   }
 
   &__indicator {
     width: 100%;
     display: flex;
     align-items: center;
-    grid-column-gap: 24px;
+    grid-column-gap: 2.4rem;
 
     &__circle {
-      width: 24px;
-      height: 24px;
+      width: 2.4rem;
+      height: 2.4rem;
       border-radius: 50%;
-      background: #cae9f9;
+      background: #959595;
 
       &.active {
-        background: #c71616;
+        background: #d9a85d;
       }
     }
 
     &__border {
-      width: calc(100% - 48px);
-      border-bottom: 2px dashed #182d424b;
+      width: calc(100% - 4.8rem);
+      border-bottom: .2rem dashed #959595;
     }
   }
 
   &__desc {
     h3 {
-      @include font("Futura PT", 2.4rem, 600, 3rem, #182d42);
+      @include font("Futura PT", 2.4rem, 600, 3rem, #959595);
     }
 
     p {
-      @include font("Futura PT", 1.6rem, 400, 2.6rem, #4b4b4b);
+      @include font("Futura PT", 1.6rem, 400, 2.6rem, #959595);
     }
   }
 }

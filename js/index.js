@@ -83,7 +83,7 @@ btns.forEach((btn) => {
 			if (item.getAttribute('aria-disabled') === 'true') {
 				item.children[0].setAttribute('stroke', '#D0D0D0');
 			} else {
-				item.children[0].setAttribute('stroke', '#C71616');
+				item.children[0].setAttribute('stroke', '#D9A85D');
 			}
 		})
 	});

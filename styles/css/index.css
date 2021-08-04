@@ -15,6 +15,10 @@ html {
   }
 }
 
+body {
+  background: #1E1E1E;
+}
+
 ul,
 p,
 h1,
@@ -85,7 +89,7 @@ input {
   left: 0;
   width: 80%;
   height: 100vh;
-  background-color: #cae9f9;
+  background-color: #1E1E1E;
   padding: 4.4rem;
   display: flex;
   flex-direction: column;
@@ -100,7 +104,7 @@ input {
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: #182d42;
+  color: #ffffff;
 }
 
 .header__nav::before {
@@ -116,9 +120,13 @@ input {
   transition: opacity 0.5s;
 }
 
+.header__logo {
+  margin-right: 1rem;
+}
+
 .header .menu-toggle {
   position: fixed;
-  color: #182d42;
+  color: #D9A85D;
   font-size: 3rem;
   top: 5rem;
   transform: translateY(-50%);
@@ -158,7 +166,7 @@ input {
 }
 
 .header__logo {
-  width: 116px;
+  width: 14.6rem;
   object-fit: contain;
 }
 
@@ -168,8 +176,9 @@ input {
 }
 
 .header__btn-wrapper button {
-  background: rgba(24, 45, 66, 0.1);
-  border: 1px solid #182d42;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  color: #fff;
   padding: 1.4rem 3.2rem;
 }
 
@@ -188,14 +197,14 @@ input {
     align-content: center;
   }
   .header__nav .nav-list .list-item {
-    margin-right: 3rem;
+    margin-right: 2.3rem;
   }
   .header__nav .nav-list .list-item a {
     font-family: "Gilroy", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: #182d42;
+    color: #FFFFFF;
   }
   .header .nav-list {
     position: initial;
@@ -224,7 +233,7 @@ input {
   font-size: 7.6rem;
   font-weight: 700;
   line-height: 12.3rem;
-  color: #182d42;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -234,7 +243,7 @@ input {
     font-size: 4.6rem;
     font-weight: 700;
     line-height: 5.3rem;
-    color: #182d42;
+    color: #ffffff;
   }
 }
 
@@ -245,12 +254,8 @@ input {
     font-size: 6.6rem;
     font-weight: 700;
     line-height: 10.3rem;
-    color: #182d42;
+    color: #ffffff;
   }
-}
-
-.data {
-  padding: 8rem 0;
 }
 
 .data__row {
@@ -265,16 +270,16 @@ input {
 }
 
 .data .right-wrapper {
-  width: 100%;
-  height: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 6rem;
 }
 
 .data__right {
   width: 75%;
+  display: flex;
+  justify-content: center;
 }
 
 .data__title {
@@ -282,7 +287,7 @@ input {
   font-size: 4rem;
   font-weight: 600;
   line-height: 6rem;
-  color: #182d42;
+  color: #d9a85d;
 }
 
 .data__items {
@@ -292,7 +297,6 @@ input {
 .data__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-right: 8rem;
 }
 
@@ -301,7 +305,7 @@ input {
   font-size: 3rem;
   font-weight: 600;
   line-height: 4rem;
-  color: #c71616;
+  color: #d9a85d;
 }
 
 .data__item span {
@@ -309,7 +313,7 @@ input {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2rem;
-  color: #4b4b4b;
+  color: #fff;
 }
 
 .data__items li:nth-child(2) {
@@ -322,7 +326,7 @@ input {
   top: 0;
   right: -4rem;
   height: 6rem;
-  width: 1px;
+  width: .1rem;
   background: #182d42;
 }
 
@@ -332,7 +336,7 @@ input {
   top: 0;
   left: -4rem;
   height: 6rem;
-  width: 1px;
+  width: .1rem;
   background: #182d42;
 }
 
@@ -362,33 +366,33 @@ input {
 .build-steps__title {
   text-align: center;
   font-family: "Futura PT", sans-serif;
-  font-size: 6.4rem;
+  font-size: 4.4rem;
   font-weight: 600;
-  line-height: 8.2rem;
-  color: #182d42;
+  line-height: 7.2rem;
+  color: #fff;
 }
 
 .build-steps__indicator {
   width: 100%;
   display: flex;
   align-items: center;
-  grid-column-gap: 24px;
+  grid-column-gap: 2.4rem;
 }
 
 .build-steps__indicator__circle {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 50%;
-  background: #cae9f9;
+  background: #959595;
 }
 
 .build-steps__indicator__circle.active {
-  background: #c71616;
+  background: #d9a85d;
 }
 
 .build-steps__indicator__border {
-  width: calc(100% - 48px);
-  border-bottom: 2px dashed #182d424b;
+  width: calc(100% - 4.8rem);
+  border-bottom: .2rem dashed #959595;
 }
 
 .build-steps__desc h3 {
@@ -396,7 +400,7 @@ input {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 3rem;
-  color: #182d42;
+  color: #959595;
 }
 
 .build-steps__desc p {
@@ -404,7 +408,7 @@ input {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  color: #4b4b4b;
+  color: #959595;
 }
 
 .apartment-select {
@@ -416,32 +420,31 @@ input {
   font-size: 6.4rem;
   font-weight: 600;
   line-height: 8.2rem;
-  color: #182d42;
+  color: #D9A85D;
 }
 
-.apartment-select__subtitle {
+.apartment-select__subtitles {
   font-family: "Futura PT", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 3.1rem;
-  color: #182d42;
+  color: #fff;
 }
 
 .apartment-select__rooms-areas, .apartment-select__rooms-amounts {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  grid-gap: 1rem;
 }
 
 .apartment-select__btn {
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #adadad;
+  border: .1rem solid #adadad;
   font-family: "Futura PT", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.9rem;
-  color: #182d42;
+  color: #fff;
   padding: 0;
 }
 
@@ -456,8 +459,8 @@ input {
 }
 
 .apartment-select__active-btn {
-  background: #182d42;
-  border: 1px solid #182d42;
+  background: #D9A85D;
+  border: .1rem solid #D9A85D;
   font-family: "Futura PT", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -480,7 +483,8 @@ input {
 }
 
 .video {
-  background: #cae9f9;
+  background: url("../../../assets/images/bg-videoSect.png") center no-repeat;
+  background-size: cover;
   padding: 6rem 0 11rem 0;
   text-align: center;
 }
@@ -496,7 +500,7 @@ input {
   font-size: 5.4rem;
   font-weight: 600;
   line-height: 7.2rem;
-  color: #182d42;
+  color: #D9A85D;
   max-width: 50%;
   margin: 0 auto 2rem auto;
 }
@@ -506,7 +510,7 @@ input {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #4b4b4b;
+  color: #fff;
   margin-bottom: 4rem;
 }
 
@@ -560,16 +564,17 @@ input {
 }
 
 .slider {
-  background: #cae9f9;
   padding: 8rem 0;
+  background: url("../../../assets/images/bg-data-slider.png") center no-repeat;
+  background-size: cover;
 }
 
 .slider__title {
   font-family: "Futura PT", sans-serif;
-  font-size: 4.4rem;
+  font-size: 4.8rem;
   font-weight: 600;
   line-height: 6.2rem;
-  color: #182d42;
+  color: #fff;
   margin-bottom: 5rem;
 }
 
@@ -620,7 +625,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 5.2rem;
-  color: #182d42;
+  color: #fff;
   margin-bottom: 2rem;
 }
 
@@ -635,7 +640,7 @@ input {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3rem;
-  color: #182d42;
+  color: #fff;
   margin-top: 2rem;
 }
 
@@ -644,7 +649,7 @@ input {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.1rem;
-  color: #585858;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
@@ -658,17 +663,23 @@ input {
 }
 
 .history .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background-color: #f06a44;
+  background-color: #d9a85d;
   width: 100%;
 }
 
 .history .swiper-pagination-progressbar {
   width: 100%;
   height: 0.2rem;
+  margin-top: 4.5rem;
 }
 
 .history .swiper-wrapper {
   margin-top: 2rem;
+  display: flex;
+}
+
+.history .swiper-wrapper p {
+  margin-bottom: 0.5rem;
 }
 
 .history .swiper-slide {
@@ -676,7 +687,16 @@ input {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2rem;
-  color: #4b4b4b;
+  color: #fff;
+  height: 100%;
+}
+
+.history .mySwiper2 .swiper-img {
+  height: 37rem;
+}
+
+.history .mySwiper2 .swiper-img img {
+  object-fit: cover;
 }
 
 .history__row {
@@ -689,17 +709,19 @@ input {
   font-size: 5rem;
   font-weight: 600;
   line-height: 6rem;
-  color: #182d42;
-  margin-bottom: 4rem;
+  color: #fff;
+  margin-bottom: 6rem;
   margin-left: 2rem;
 }
 
 .history .right-wrapper h3 {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
   font-family: "Futura PT", sans-serif;
   font-size: 3rem;
   font-weight: 600;
   line-height: 4rem;
-  color: #182d42;
+  color: #fff;
 }
 
 .history__right {
@@ -738,10 +760,11 @@ input {
 
 .data-slider__title {
   font-family: "Futura PT", sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 450;
-  line-height: 6rem;
-  color: #182d42;
+  line-height: 8rem;
+  color: #D9A85D;
+  margin-bottom: 2rem;
 }
 
 .data-slider__description {
@@ -749,20 +772,20 @@ input {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
-  color: #4b4b4b;
+  color: #fff;
 }
 
 .data-slider ::-webkit-scrollbar {
   width: 3.1rem;
   /* ширина для вертикального скролла */
-  height: 0.3rem;
+  height: 0.4rem;
   /* высота для горизонтального скролла */
   background-color: #c4c4c4;
   scrollbar-width: 30rem;
 }
 
 .data-slider ::-webkit-scrollbar-thumb {
-  background-color: #d72f2f;
+  background-color: #D9A85D;
   border-radius: 9em;
   height: 1rem;
 }
@@ -804,7 +827,7 @@ input {
   font-size: 2rem;
   font-weight: 450;
   line-height: 3rem;
-  color: #182d42;
+  color: #fff;
   margin: 2.5rem 0 7rem 0;
 }
 
@@ -845,7 +868,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 6.2rem;
-  color: #182d42;
+  color: #D9A85D;
   margin-bottom: 3rem;
 }
 
@@ -854,7 +877,7 @@ input {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
-  color: #4b4b4b;
+  color: #fff;
   max-width: 40rem;
   margin-bottom: 2rem;
 }
@@ -880,7 +903,8 @@ input {
 }
 
 .form {
-  background: #cae9f9;
+  background: url("../../../assets/images/bg-videoSect.png") center no-repeat;
+  background-size: cover;
   padding: 6.8rem 0;
   text-align: center;
 }
@@ -896,7 +920,7 @@ input {
   font-size: 4.4rem;
   font-weight: 600;
   line-height: 6.2rem;
-  color: #182d42;
+  color: #fff;
 }
 
 .form__description {
@@ -904,7 +928,7 @@ input {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 2.4rem;
-  color: #4b4b4b;
+  color: #fff;
   margin: 3rem 0 5rem 0;
 }
 
@@ -916,8 +940,7 @@ input {
 
 .form__input {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background: #cae9f9;
+  border-bottom: 0.1 solid rgba(0, 0, 0, 0.2);
   padding: 1.3rem 16rem 1.4rem 2rem;
   margin-right: 4rem;
   font-family: "Gilroy", sans-serif;
@@ -933,10 +956,10 @@ input {
   font-weight: 600;
   line-height: 1.9rem;
   color: #fff;
-  background: #182d42;
+  background: #D9A85D;
   padding: 1.4rem 3.7rem;
   margin: .5rem;
-  border: #182d42;
+  border: .1rem solid #D9A85D;
   max-width: 25rem;
 }
 
@@ -974,7 +997,8 @@ input {
 }
 
 .footer__logo img {
-  max-width: 15rem;
+  margin: 4rem 0;
+  max-width: 25rem;
 }
 
 .footer__nav {
@@ -984,13 +1008,10 @@ input {
 }
 
 .footer__nav .nav-list {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer__nav .nav-list .list-item {
-  margin-right: 3rem;
 }
 
 .footer__nav .nav-list .list-item a {
@@ -998,7 +1019,7 @@ input {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: #182d42;
+  color: #fff;
 }
 
 .footer__nav .nav-list:last-child {
@@ -1010,6 +1031,7 @@ input {
   justify-content: space-between;
   position: relative;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 .footer__bottom img {
@@ -1019,7 +1041,7 @@ input {
 .footer__bottom::after {
   content: "";
   position: absolute;
-  background: #182d42;
+  background: #8C8C8C;
   opacity: 0.2;
   height: 0.14rem;
   width: 83vw;
@@ -1067,7 +1089,7 @@ input {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 2rem;
-  color: #182d42;
+  color: #D9A85D;
 }
 
 .modal__content a img {
@@ -1091,7 +1113,7 @@ input {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
-  color: #182d42;
+  color: #D9A85D;
 }
 
 .modal__description {
@@ -1121,7 +1143,7 @@ input {
   font-weight: 600;
   line-height: 1.9rem;
   color: #fff;
-  background: #182d42;
+  background: #D9A85D;
   padding: 1.4rem 3.7rem;
   margin: 0.5rem;
   border: #182d42;

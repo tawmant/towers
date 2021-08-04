@@ -1,5 +1,6 @@
 .video {
-    background: #cae9f9;
+    background: url("../../../assets/images/bg-videoSect.png") center no-repeat;
+    background-size: cover;
     padding: 6rem 0 11rem 0;
     text-align: center;
     .container {
@@ -8,12 +9,12 @@
         position: relative;
     }
     &__title {
-        @include font("Futura PT", 5.4rem, 600, 7.2rem, #182d42);
+        @include font("Futura PT", 5.4rem, 600, 7.2rem, #D9A85D);
         max-width: 50%;
         margin: 0 auto 2rem auto;
     }
     &__description {
-        @include font("Gilroy", 1.6rem, 500, 1.8rem, #4b4b4b);
+        @include font("Gilroy", 1.6rem, 500, 1.8rem, #fff);
         margin-bottom: 4rem;
     }
     &__four {

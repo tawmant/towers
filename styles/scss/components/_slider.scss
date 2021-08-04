@@ -1,9 +1,9 @@
 .slider {
-    background: #cae9f9;
     padding: 8rem 0;
-
+    background: url("../../../assets/images/bg-data-slider.png") center no-repeat;
+    background-size: cover;
     &__title {
-        @include font("Futura PT", 4.4rem, 600, 6.2rem, #182d42);
+        @include font("Futura PT", 4.8rem, 600, 6.2rem, #fff);
         margin-bottom: 5rem;
     }
     .swiper-container {
