@@ -83,7 +83,15 @@ for (let i = 0; i < room_amounts.length; i++) {
 const areasCont = document.querySelector('.apartment-select__rooms-areas');
 const apartmentImg = document.querySelector('.apartment-select__selected-image');
 
-createAreas(room_1);
+
+const parentSpinner = document.querySelector('.apartment-select__wrapper');
+const spinner = document.createElement('div');
+spinner.classList.add('spinner-grow', 'text-warning');
+spinner.setAttribute('role', 'status');
+spinner.innerHTML = `
+<span class="visually-hidden">Loading...</span>
+`;
+parentSpinner.append(spinner);
 
 function createAreas(areas) {
 	areasCont.innerHTML = '';
@@ -105,7 +113,14 @@ function createAreas(areas) {
 			}
 			areaBtns[i].classList.add('apartment-select__active-btn');
 			apartmentImg.setAttribute('src', `./assets/images/apartments/${e.target.value}`);
-		console.log(e.target.value);
 		});
 	}
 }
+apartmentImg.oncload = function () {
+	console.log('test');
+};
+
+apartmentImg.addEventListener('load', (e) => {
+  createAreas(room_1);
+  spinner.style.display = 'none'
+});
