@@ -9,7 +9,7 @@
         align-items: center;
     }
     &__title {
-        @include font("Gilroy", 4.4rem, 600, 6.2rem, #d9a85d);
+        @include font("Gilroy", 4.4rem, 700, 6.2rem, #d9a85d);
     }
     &__description {
         @include font("Gilroy", 1.4rem, 500, 2.4rem, #fff);

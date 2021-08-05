@@ -291,9 +291,10 @@ input {
 .data__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 6rem;
   color: #d9a85d;
+  margin-bottom: 3.5rem;
 }
 
 .data__items {
@@ -359,6 +360,9 @@ input {
   .data__right {
     width: 50%;
   }
+  .data .right-wrapper {
+    align-items: center;
+  }
 }
 
 .build-steps {
@@ -369,7 +373,7 @@ input {
   text-align: center;
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 7.2rem;
   color: #d9a85d;
 }
@@ -405,7 +409,7 @@ input {
 .build-steps__desc h3 {
   font-family: "Gilroy", sans-serif;
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 3rem;
   color: #959595;
 }
@@ -425,7 +429,7 @@ input {
 .apartment-select__main-title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 8.2rem;
   color: #D9A85D;
 }
@@ -470,7 +474,7 @@ input {
   border: .1rem solid #D9A85D;
   font-family: "Gilroy", sans-serif;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.9rem;
   color: #fff;
 }
@@ -505,7 +509,7 @@ input {
 .video__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 7.2rem;
   color: #d9a85d;
   max-width: 50%;
@@ -579,7 +583,7 @@ input {
 .slider__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 6.2rem;
   color: #fff;
   margin-bottom: 5rem;
@@ -632,7 +636,7 @@ input {
 .advantage__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 5.2rem;
   color: #D9A85D;
   margin-bottom: 2rem;
@@ -716,7 +720,7 @@ input {
 .history__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 6rem;
   color: #d9a85d;
   margin-bottom: 6rem;
@@ -770,7 +774,7 @@ input {
 .data-slider__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 450;
+  font-weight: 700;
   line-height: 8rem;
   color: #d9a85d;
   margin-bottom: 2rem;
@@ -875,7 +879,7 @@ input {
 .location__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 6.2rem;
   color: #d9a85d;
   margin-bottom: 3rem;
@@ -943,7 +947,7 @@ input {
 .architecture__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 6.2rem;
   color: #d9a85d;
   margin-bottom: 4rem;
@@ -995,7 +999,7 @@ input {
 .form__title {
   font-family: "Gilroy", sans-serif;
   font-size: 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 6.2rem;
   color: #d9a85d;
 }

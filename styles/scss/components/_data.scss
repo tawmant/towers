@@ -25,7 +25,8 @@
         justify-content: center;
     }
     &__title {
-        @include font("Gilroy", 4rem, 600, 6rem, #d9a85d);
+        @include font("Gilroy", 4rem, 700, 6rem, #d9a85d);
+        margin-bottom: 3.5rem;
     }
     &__items {
         display: flex;
@@ -77,6 +78,9 @@
         }
         &__right {
             width: 50%;
+        }
+        .right-wrapper {
+            align-items: center;
         }
     }
 }

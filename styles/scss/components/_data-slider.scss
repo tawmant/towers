@@ -1,7 +1,7 @@
 .data-slider {
     padding: 10rem 0;
     &__title {
-        @include font("Gilroy", 4.4rem, 450, 8rem, #d9a85d);
+        @include font("Gilroy", 4.4rem, 700, 8rem, #d9a85d);
         margin-bottom: 2rem;
     }
     &__description {
