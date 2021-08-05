@@ -1,7 +1,7 @@
 .data-slider {
     padding: 10rem 0;
     &__title {
-        @include font("Futura PT", 6rem, 450, 8rem, #D9A85D);
+        @include font("Gilroy", 4.4rem, 450, 8rem, #d9a85d);
         margin-bottom: 2rem;
     }
     &__description {
@@ -14,7 +14,7 @@
         scrollbar-width: 30rem;
     }
     ::-webkit-scrollbar-thumb {
-        background-color: #D9A85D;
+        background-color: #d9a85d;
         border-radius: 9em;
         height: 1rem;
     }
@@ -43,7 +43,7 @@
                 height: 50rem;
             }
             &__description {
-                @include font("Futura PT", 2rem, 450, 3rem, #fff);
+                @include font("Gilroy", 2rem, 450, 3rem, #fff);
                 margin: 2.5rem 0 7rem 0;
             }
         }

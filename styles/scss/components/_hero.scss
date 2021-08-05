@@ -6,7 +6,7 @@
     }
     &__title {
         max-width: 65%;
-        @include font("Futura PT", 7.6rem, 700, 12.3rem, #ffffff);
+        @include font("Gilroy", 7.6rem, 700, 12.3rem, #ffffff);
     }
 }
 
@@ -14,7 +14,7 @@
     .hero {
         &__title {
             max-width: 65%;
-            @include font("Futura PT", 4.6rem, 700, 5.3rem, #ffffff);
+            @include font("Gilroy", 4.6rem, 700, 5.3rem, #ffffff);
         }
     }
 }
@@ -23,7 +23,7 @@
     .hero {
         &__title {
             max-width: 65%;
-            @include font("Futura PT", 6.6rem, 700, 10.3rem, #ffffff);
+            @include font("Gilroy", 6.6rem, 700, 10.3rem, #ffffff);
         }
     }
 }

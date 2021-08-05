@@ -1,12 +1,8 @@
 .build-steps {
   padding: 7rem 0 !important;
-  &__steps {
-    grid-gap: 6rem;
-  }
-
   &__title {
     text-align: center;
-    @include font("Futura PT", 4.4rem, 600, 7.2rem, #d9a85d);
+    @include font("Gilroy", 4.4rem, 600, 7.2rem, #d9a85d);
   }
 
   &__indicator {
@@ -28,17 +24,21 @@
 
     &__border {
       width: calc(100% - 4.8rem);
-      border-bottom: .2rem dashed #959595;
+      border-bottom: 0.2rem dashed #959595;
+      width: 30rem;
     }
+  }
+  &__step {
+    margin: 0 2rem 2rem 0;
   }
 
   &__desc {
     h3 {
-      @include font("Futura PT", 2.4rem, 600, 3rem, #959595);
+      @include font("Gilroy", 2.4rem, 600, 3rem, #959595);
     }
 
     p {
-      @include font("Futura PT", 1.6rem, 400, 2.6rem, #959595);
+      @include font("Gilroy", 1.6rem, 400, 2.6rem, #959595);
     }
   }
 }

@@ -7,7 +7,7 @@
         align-items: center;
     }
     &__title {
-        @include font("Futura PT", 4.4rem, 600, 6.2rem, #d9a85d);
+        @include font("Gilroy", 4.4rem, 600, 6.2rem, #d9a85d);
         margin-bottom: 3rem;
     }
     &__description {

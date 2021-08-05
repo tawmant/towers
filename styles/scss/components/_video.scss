@@ -9,7 +9,7 @@
         position: relative;
     }
     &__title {
-        @include font("Futura PT", 5.4rem, 600, 7.2rem, #D9A85D);
+        @include font("Gilroy", 4.4rem, 600, 7.2rem, #d9a85d);
         max-width: 50%;
         margin: 0 auto 2rem auto;
     }

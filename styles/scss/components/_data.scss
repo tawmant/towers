@@ -4,8 +4,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    &__left {
+        // max-height: 75%;
+        padding: 0;
         img {
             margin-bottom: 2rem;
+            max-width: 90%;
         }
     }
     .right-wrapper {
@@ -20,7 +25,7 @@
         justify-content: center;
     }
     &__title {
-        @include font("Futura PT", 4rem, 600, 6rem, #d9a85d);
+        @include font("Gilroy", 4rem, 600, 6rem, #d9a85d);
     }
     &__items {
         display: flex;
@@ -30,7 +35,7 @@
         flex-direction: column;
         margin-right: 8rem;
         p {
-            @include font("Futura PT", 3rem, 600, 4rem, #d9a85d);
+            @include font("Gilroy", 3rem, 600, 4rem, #d9a85d);
         }
         span {
             @include font("Gilroy", 1.4rem, 400, 2rem, #fff);
@@ -45,7 +50,7 @@
         top: 0;
         right: -4rem;
         height: 6rem;
-        width: .1rem;
+        width: 0.1rem;
         background: #fff;
     }
     &__items li:nth-child(2)::after {
@@ -54,7 +59,7 @@
         top: 0;
         left: -4rem;
         height: 6rem;
-        width: .1rem;
+        width: 0.1rem;
         background: #fff;
     }
 }

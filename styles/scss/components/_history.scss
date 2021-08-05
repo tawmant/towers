@@ -33,7 +33,7 @@
         justify-content: space-around;
     }
     &__title {
-        @include font("Futura PT", 5rem, 600, 6rem, #d9a85d);
+        @include font("Gilroy", 4.4rem, 600, 6rem, #d9a85d);
         margin-bottom: 6rem;
         margin-left: 2rem;
     }
@@ -41,7 +41,7 @@
         h3 {
             margin-top: -2rem;
             margin-bottom: 2rem;
-            @include font("Futura PT", 3rem, 600, 4rem, #fff);
+            @include font("Gilroy", 3rem, 600, 4rem, #fff);
         }
     }
     &__right {

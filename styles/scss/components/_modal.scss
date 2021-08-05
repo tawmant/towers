@@ -29,7 +29,7 @@
         a {
             display: flex;
             align-items: center;
-            @include font("Gilroy", 1.7rem, 600, 2rem, #D9A85D);
+            @include font("Gilroy", 1.7rem, 600, 2rem, #d9a85d);
             img {
                 margin-right: 1rem;
             }
@@ -47,7 +47,7 @@
         cursor: pointer;
     }
     &__title {
-        @include font("Futura PT", 2rem, 700, 3rem, #D9A85D);
+        @include font("Gilroy", 2rem, 700, 3rem, #d9a85d);
     }
     &__description {
         @include font("Gilroy", 1.5rem, 500, 2rem, #4b4b4b);
@@ -67,7 +67,7 @@
     }
     &__btn {
         @include font("Gilroy", 1.6rem, 600, 1.9rem, #fff);
-        background: #D9A85D;
+        background: #d9a85d;
         padding: 1.4rem 3.7rem;
         margin: 0.5rem;
         border: #182d42;
