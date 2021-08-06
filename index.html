@@ -35,7 +35,7 @@
 										<a href="#build-steps">Ход строительства</a>
 									</li>
 									<li class="list-item">
-										<a href="#video">Видео объекта</a>
+										<a href="#videoSect">Видео объекта</a>
 									</li>
 									<li class="list-item">
 										<a href="#data-slider">Детали квартир</a>
@@ -152,7 +152,7 @@
 				</div>
 			</section>
 
-			<section class="video" id="video">
+			<section class="video" id="videoSect">
 				<div class="container-sm">
 					<div class="video__inner">
 						<h2 class="video__title">Посмотрите ролик о ЖК “Medina Towers”</h2>
@@ -167,7 +167,7 @@
 								onclick="playVideo('./assets/video/video.mp4')"
 							/>
 						</div>
-						<div class="video-player" id="video-player">
+						<div class="video-player" id="videoPlayer">
 							<video width="100%" controls id="video">
 								<source src="./assets/video/video.mp4" type="video/mp4" />
 							</video>
@@ -536,12 +536,11 @@
 			});
 		</script>
 		<script>
-			let videoPlayer = document.getElementById('video-player');
+			let videoPlayer = document.getElementById('videoPlayer');
 			let video = document.getElementById('video');
 
 			function stopVideo() {
 				videoPlayer.style.display = 'none';
-				video.src = '';
 			}
 
 			function playVideo(file) {

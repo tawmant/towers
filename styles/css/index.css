@@ -162,7 +162,6 @@ input {
 
 .header__row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -190,7 +189,6 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
   .header__nav {
     display: flex;
@@ -213,6 +211,7 @@ input {
     height: initial;
     background-color: transparent;
     padding: 0;
+    flex-wrap: wrap;
     justify-content: initial;
     flex-direction: row;
     transform: initial;
@@ -480,7 +479,7 @@ input {
 }
 
 .apartment-select__selected-image {
-  width: 58%;
+  width: 53%;
   min-height: 47rem;
   object-fit: contain;
 }
@@ -1092,6 +1091,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .form__input {
@@ -1207,7 +1207,7 @@ input {
   background: #8C8C8C;
   opacity: 0.2;
   height: 0.14rem;
-  width: 83vw;
+  width: 100%;
   top: -1rem;
   left: 0;
 }
