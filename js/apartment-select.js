@@ -85,8 +85,6 @@ room_amounts.forEach((item, i) => {
 		room_amounts.forEach((element) => {
 			element.classList.remove('apartment-select__active-btn');
 		});
-		spinner.style.display = 'block';
-		apartmentImg.style.display = 'none'
 		item.classList.add('apartment-select__active-btn');
 		const btnAttr = item.getAttribute('value');
 		btnAttr === 'room_1' ? createAreas(room_1) : btnAttr === 'room_2' ? createAreas(room_2) : createAreas(room_3);
@@ -126,6 +124,8 @@ function createAreas(areas) {
 	const areaBtns = document.querySelectorAll('.apartment-select__area');
 	for (let i = 0; i < areaBtns.length; i++) {
 		areaBtns[i].addEventListener('click', (e) => {
+			spinner.style.display = 'block';
+			apartmentImg.style.display = 'none'
 			for (let j = 0; j < areaBtns.length; j++) {
 				areaBtns[j].classList.remove('apartment-select__active-btn');
 			}
