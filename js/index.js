@@ -68,7 +68,6 @@ inputs.forEach((item) => {
 	});
 });
 
-
 // location
 const iframe = document.querySelector('.location__iframe'),
 	fakeImg = document.querySelector('.location__fake-img');
@@ -80,20 +79,35 @@ fakeImg.addEventListener('click', () => {
 	iframe.classList.add('show');
 });
 
+document.getElementById('scroll_container').addEventListener('wheel', function (event) {
+	if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+		var modifier = 1;
+		// иные режимы возможны в Firefox
+	} else if (event.deltaMode == event.DOM_DELTA_LINE) {
+		var modifier = parseInt(getComputedStyle(this).lineHeight);
+	} else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+		var modifier = this.clientHeight;
+	}
+	if (event.deltaY != 0) {
+		// замена вертикальной прокрутки горизонтальной
+		this.scrollLeft += modifier * event.deltaY;
+		event.preventDefault();
+	}
+});
 
 // history slider
 const parentBtns = document.querySelector('.history__btns');
-	btns = Array.from(parentBtns.querySelectorAll('.history__btn'));
-	
-	btns.forEach((btn) => {
-		btn.addEventListener('click', (e) => {
-			const target = e.target;
-			btns.forEach((item) => {
-				if (item.getAttribute('aria-disabled') === 'true') {
-					item.children[0].setAttribute('stroke', '#D0D0D0');
-				} else {
-					item.children[0].setAttribute('stroke', '#D9A85D');
-				}
-			});
+btns = Array.from(parentBtns.querySelectorAll('.history__btn'));
+
+btns.forEach((btn) => {
+	btn.addEventListener('click', (e) => {
+		const target = e.target;
+		btns.forEach((item) => {
+			if (item.getAttribute('aria-disabled') === 'true') {
+				item.children[0].setAttribute('stroke', '#D0D0D0');
+			} else {
+				item.children[0].setAttribute('stroke', '#D9A85D');
+			}
 		});
 	});
+});
