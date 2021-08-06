@@ -1,5 +1,8 @@
 .build-steps {
   padding: 7rem 0 !important;
+  &__steps {
+    justify-content: center;
+  }
   &__title {
     text-align: center;
     @include font("Gilroy", 4.4rem, 700, 7.2rem, #d9a85d);
@@ -25,7 +28,7 @@
     &__border {
       width: calc(100% - 4.8rem);
       border-bottom: 0.2rem dashed #959595;
-      width: 30rem;
+      width: 24rem;
     }
   }
   &__step {

@@ -73,7 +73,6 @@ const iframe = document.querySelector('.location__iframe'),
 	fakeImg = document.querySelector('.location__fake-img');
 
 fakeImg.addEventListener('click', () => {
-	console.log('test');
 	fakeImg.classList.add('hide');
 	iframe.classList.remove('hide');
 	iframe.classList.add('show');

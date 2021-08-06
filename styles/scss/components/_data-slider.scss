@@ -5,7 +5,7 @@
         margin-bottom: 2rem;
     }
     &__description {
-        @include font("Gilroy", 1.5rem, 400, 2rem, #fff);
+        @include font("Gilroy", 1.4rem, 400, 2rem, #fff);
     }
     ::-webkit-scrollbar {
         width: 3.1rem; /* ширина для вертикального скролла */
@@ -33,7 +33,7 @@
     }
     .arrow {
         position: absolute;
-        bottom: -6rem;
+        bottom: 2rem;
         left: 0;
         animation: left 1s infinite;
     }
@@ -97,16 +97,16 @@
     }
 }
 
-@keyframes left{
-    0%{
+@keyframes left {
+    0% {
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 1;
     }
-    100%{
+    100% {
         opacity: 0;
-        transform: translateX(2rem);
+        transform: translateX(5rem);
     }
 }
 

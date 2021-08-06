@@ -71,7 +71,7 @@ const parentSpinner = document.querySelector('.apartment-select__wrapper');
 const spinner = document.createElement('div');
 spinner.classList.add('spinner-grow', 'text-warning');
 spinner.setAttribute('role', 'status');
-spinner.setAttribute('style', 'width: 6rem; height: 6rem; margin: 20rem;');
+spinner.setAttribute('style', 'width: 6rem; height: 6rem; margin: auto;');
 spinner.innerHTML = `
 <span class="visually-hidden">Loading...</span>
 `;
