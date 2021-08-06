@@ -1,7 +1,7 @@
 .apartment-select {
   padding: 10rem 0 !important;
   &__main-title {
-    @include font("Gilroy", 4.4rem, 700, 8.2rem, #D9A85D);
+    @include font("Gilroy", 4.4rem, 700, 8.2rem, #d9a85d);
   }
 
   &__subtitles {
@@ -18,7 +18,7 @@
 
   &__btn {
     background: rgba(255, 255, 255, 0.1);
-    border: .1rem solid #adadad;
+    border: 0.1rem solid #adadad;
     @include font("Gilroy", 1.6rem, 400, 1.9rem, #fff);
     padding: 0;
   }
@@ -34,8 +34,8 @@
   }
 
   &__active-btn {
-    background: #D9A85D;
-    border: .1rem solid #D9A85D;
+    background: #d9a85d;
+    border: 0.1rem solid #d9a85d;
     @include font("Gilroy", 1.6rem, 700, 1.9rem, #fff);
   }
 

@@ -28,7 +28,17 @@
     &__text {
         margin-right: 13rem;
     }
+    &__right {
+        position: relative;
+    }
+    .arrow {
+        position: absolute;
+        bottom: -6rem;
+        left: 0;
+        animation: left 1s infinite;
+    }
     &__list {
+        position: relative;
         overflow-x: auto;
         width: auto;
         max-height: 64rem;
@@ -74,7 +84,7 @@
         background-size: cover;
     }
     &__list li:nth-child(3) div {
-        background: url("../../../assets/images/data-slider3.png") center no-repeat ;
+        background: url("../../../assets/images/data-slider3.png") center no-repeat;
         background-size: cover;
     }
     &__list li:nth-child(5) div {
@@ -84,6 +94,19 @@
     &__list li:nth-child(6) div {
         background: url("../../../assets/images/data-slider6.png") center no-repeat;
         background-size: cover;
+    }
+}
+
+@keyframes left{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(2rem);
     }
 }
 
