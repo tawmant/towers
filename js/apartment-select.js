@@ -67,23 +67,6 @@ const room_3 = [
 	},
 ];
 
-const room_amounts = document.querySelectorAll('.apartment-select__amount');
-
-for (let i = 0; i < room_amounts.length; i++) {
-	room_amounts[i].addEventListener('click', () => {
-		for (let j = 0; j < room_amounts.length; j++) {
-			room_amounts[j].classList.remove('apartment-select__active-btn');
-		}
-		room_amounts[i].classList.add('apartment-select__active-btn');
-		const btnAttr = room_amounts[i].getAttribute('value');
-		btnAttr === 'room_1' ? createAreas(room_1) : btnAttr === 'room_2' ? createAreas(room_2) : createAreas(room_3);
-	});
-}
-
-const areasCont = document.querySelector('.apartment-select__rooms-areas');
-const apartmentImg = document.querySelector('.apartment-select__selected-image');
-
-
 const parentSpinner = document.querySelector('.apartment-select__wrapper');
 const spinner = document.createElement('div');
 spinner.classList.add('spinner-grow', 'text-warning');
@@ -92,6 +75,41 @@ spinner.innerHTML = `
 <span class="visually-hidden">Loading...</span>
 `;
 parentSpinner.append(spinner);
+
+const room_amounts = document.querySelectorAll('.apartment-select__amount');
+const areasCont = document.querySelector('.apartment-select__rooms-areas');
+const apartmentImg = document.querySelector('.apartment-select__selected-image');
+
+room_amounts.forEach((item, i) => {
+	item.addEventListener('click', () => {
+		room_amounts.forEach((element) => {
+			element.classList.remove('apartment-select__active-btn');
+		});
+		item.classList.add('apartment-select__active-btn');
+		const btnAttr = item.getAttribute('value');
+		btnAttr === 'room_1' ? createAreas(room_1) : btnAttr === 'room_2' ? createAreas(room_2) : createAreas(room_3);
+	});
+});
+
+apartmentImg.style.display = 'none'
+
+apartmentImg.addEventListener('load', () => {
+	spinner.style.display = 'none';
+	apartmentImg.style.display = 'block'
+});
+
+// for (let i = 0; i < room_amounts.length; i++) {
+// 	room_amounts[i].addEventListener('click', () => {
+// 		for (let j = 0; j < room_amounts.length; j++) {
+// 			room_amounts[j].classList.remove('apartment-select__active-btn');
+// 		}
+// 		room_amounts[i].classList.add('apartment-select__active-btn');
+// 		const btnAttr = room_amounts[i].getAttribute('value');
+// 		btnAttr === 'room_1' ? createAreas(room_1) : btnAttr === 'room_2' ? createAreas(room_2) : createAreas(room_3);
+// 	});
+// }
+
+createAreas(room_1);
 
 function createAreas(areas) {
 	areasCont.innerHTML = '';
@@ -116,11 +134,3 @@ function createAreas(areas) {
 		});
 	}
 }
-apartmentImg.oncload = function () {
-	console.log('test');
-};
-
-apartmentImg.addEventListener('load', (e) => {
-  createAreas(room_1);
-  spinner.style.display = 'none'
-});

@@ -864,6 +864,11 @@ input {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.data-slider__list li:nth-child(1) div {
+  background: url("../../../assets/images/location-img.png") center no-repeat;
+  background-size: cover;
+}
+
 .data-slider__list li:nth-child(2) div {
   background: url("../../../assets/images/data-slider2.png") center no-repeat;
 }
@@ -873,8 +878,12 @@ input {
   background-size: cover;
 }
 
-.data-slider__list li:nth-child(4) div {
-  background: url("../../../assets/images/data-slider4.png") center no-repeat;
+.data-slider__list li:nth-child(5) div {
+  background: url("../../../assets/images/data-slider5.png") center no-repeat;
+}
+
+.data-slider__list li:nth-child(6) div {
+  background: url("../../../assets/images/data-slider6.png") center no-repeat;
 }
 
 @media (max-width: 960px) {

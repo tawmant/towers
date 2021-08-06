@@ -65,15 +65,25 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
+    &__list li:nth-child(1) div {
+        background: url("../../../assets/images/location-img.png") center no-repeat;
+        background-size: cover;
+    }
     &__list li:nth-child(2) div {
         background: url("../../../assets/images/data-slider2.png") center no-repeat;
+        background-size: cover;
     }
     &__list li:nth-child(3) div {
         background: url("../../../assets/images/data-slider3.png") center no-repeat ;
         background-size: cover;
     }
-    &__list li:nth-child(4) div {
-        background: url("../../../assets/images/data-slider4.png") center no-repeat;
+    &__list li:nth-child(5) div {
+        background: url("../../../assets/images/data-slider5.png") center no-repeat;
+        background-size: cover;
+    }
+    &__list li:nth-child(6) div {
+        background: url("../../../assets/images/data-slider6.png") center no-repeat;
+        background-size: cover;
     }
 }
 
