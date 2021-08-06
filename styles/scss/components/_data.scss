@@ -14,10 +14,10 @@
         }
     }
     .right-wrapper {
-        width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
     }
     &__right {
         width: 75%;
@@ -78,9 +78,6 @@
         }
         &__right {
             width: 50%;
-        }
-        .right-wrapper {
-            align-items: center;
         }
     }
 }

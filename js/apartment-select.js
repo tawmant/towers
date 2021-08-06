@@ -97,17 +97,6 @@ apartmentImg.addEventListener('load', () => {
 	apartmentImg.style.display = 'block'
 });
 
-// for (let i = 0; i < room_amounts.length; i++) {
-// 	room_amounts[i].addEventListener('click', () => {
-// 		for (let j = 0; j < room_amounts.length; j++) {
-// 			room_amounts[j].classList.remove('apartment-select__active-btn');
-// 		}
-// 		room_amounts[i].classList.add('apartment-select__active-btn');
-// 		const btnAttr = room_amounts[i].getAttribute('value');
-// 		btnAttr === 'room_1' ? createAreas(room_1) : btnAttr === 'room_2' ? createAreas(room_2) : createAreas(room_3);
-// 	});
-// }
-
 createAreas(room_1);
 
 function createAreas(areas) {

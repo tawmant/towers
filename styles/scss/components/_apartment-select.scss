@@ -1,5 +1,12 @@
 .apartment-select {
-  padding: 10rem 0 !important;
+  &__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media only screen and (max-width: 960px){
+      grid-template: 1fr 1fr / 1fr;
+    }
+  }
   &__main-title {
     @include font("Gilroy", 4.4rem, 700, 8.2rem, #d9a85d);
   }
@@ -40,19 +47,9 @@
   }
 
   &__selected-image {
-    width: 53%;
-    min-height: 47rem;
+    align-self: center;
+    width: 100%;
     object-fit: contain;
-  }
-}
-
-@media (max-width: 960px) {
-  .apartment-select {
-    &__dashboard {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   }
 }
 

@@ -2,10 +2,15 @@
   padding: 7rem 0 !important;
   &__steps {
     justify-content: center;
+    grid-gap: 4rem;
   }
   &__title {
     text-align: center;
     @include font("Gilroy", 4.4rem, 700, 7.2rem, #d9a85d);
+  }
+
+  &__step{
+    width: 30rem;
   }
 
   &__indicator {
@@ -31,9 +36,6 @@
       width: 24rem;
     }
   }
-  &__step {
-    margin: 0 2rem 2rem 0;
-  }
 
   &__desc {
     h3 {
@@ -41,7 +43,7 @@
     }
 
     p {
-      @include font("Gilroy", 1.6rem, 400, 2.6rem, #959595);
+      @include font("Gilroy", 1.4rem, 400, 2.3rem, #959595);
     }
   }
 }
