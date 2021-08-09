@@ -100,27 +100,28 @@ apartmentImg.addEventListener('load', () => {
 createAreas(room_1);
 
 function createAreas(areas) {
+
+	console.log(areas);
 	areasCont.innerHTML = '';
-	for (let i = 0; i < areas.length; i++) {
-		let area = areas[i];
+	areas.forEach(area => {
 		const newButton = document.createElement('button');
 		newButton.setAttribute('value', area.src);
 		newButton.classList.add('apartment-select__area');
 		newButton.classList.add('apartment-select__btn');
 		newButton.innerHTML = area.title;
 		areasCont.appendChild(newButton);
-	}
+	})
 
 	const areaBtns = document.querySelectorAll('.apartment-select__area');
-	for (let i = 0; i < areaBtns.length; i++) {
-		areaBtns[i].addEventListener('click', (e) => {
+	areaBtns.forEach(areaBtn => {
+		areaBtn.addEventListener('click', (e) => {
 			spinner.style.display = 'block';
 			apartmentImg.style.display = 'none'
-			for (let j = 0; j < areaBtns.length; j++) {
-				areaBtns[j].classList.remove('apartment-select__active-btn');
-			}
-			areaBtns[i].classList.add('apartment-select__active-btn');
+			areaBtns.forEach( areaBtnJ => {
+				areaBtnJ.classList.remove('apartment-select__active-btn');
+			})
+			areaBtn.classList.add('apartment-select__active-btn');
 			apartmentImg.setAttribute('src', `./assets/images/apartments/${e.target.value}`);
 		});
-	}
+	})
 }
