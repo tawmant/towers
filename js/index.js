@@ -32,6 +32,7 @@ function modal(triggerSelector, modalSelector) {
 	});
 
 	modal.addEventListener('click', (e) => {
+		e.preventDefault();
 		if (e.target === modal || e.target.getAttribute('data-close') == '') {
 			closeModal(modalSelector);
 		}
