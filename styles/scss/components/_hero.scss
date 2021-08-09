@@ -3,12 +3,18 @@
     z-index: 1;
     &__content {
         padding-top: 13vh;
+
+        &__about__logo{
+            width: 26.6rem;
+            height: 27.5rem;
+        }
     }
     &__title {
         max-width: 65%;
         @include font("Gilroy", 7.6rem, 700, 12.3rem, #ffffff);
     }
 }
+// hero__content__about__logo
 
 @media (min-width: 768px) {
     .hero {
