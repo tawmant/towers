@@ -84,8 +84,6 @@ apartmentImg.addEventListener('load', () => {
 createAreas(room_1);
 
 function createAreas(areas) {
-
-	console.log(areas);
 	areasCont.innerHTML = '';
 	areas.forEach(area => {
 		const newButton = document.createElement('button');

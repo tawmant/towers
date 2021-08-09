@@ -1,91 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Titan</title>
-		<link rel="icon" href="./assets/images/logog.svg" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css" />
-		<link href="./styles/css/index.css" rel="stylesheet" />
-	</head>
-	<body>
-		<main>
-			<div class="main-cont">
-				<header class="header">
-					<div class="header__container container">
-						<div class="d-flex align-items-center flex-wrap pt-5 justify-content-end">
-							<p class="header__row__address m-0 me-0 me-lg-4 d-flex align-items-center">
-								<img class="me-2" src="./assets/images/location__icon.svg" alt="">
-								г. Нур-Султан, улица Казанат 1/1, Бизнес центр “TIME”
-							</p>
-							<div class="header__row__contacts d-flex align-items-center">
-								<img class="me-2" src="./assets/images/bi_phone.svg" alt="">
-								<a class="me-2" href="tel:+77088028888">+7 (708) 802 88 88</a>
-								<a href="tel:+77088038888">+7 (708) 803 88 88</a>
-							</div>
-						</div>
-						<div class="header__row">
-							<div class="header__logo d-flex align-items-center justify-content-center">
-								<a href="./index.html">
-									<img src="assets/images/logo.png" alt="logo" />
-								</a>
-							</div>
-							<nav class="header__nav">
-								<ul class="nav-list justify-content-lg-center justify-content-start">
-									<li class="d-flex d-lg-none justify-content-center nav-list-logo mb-5">
-										<img src="./assets/images/logo.png" alt="">
-									</li>
-									<li class="list-item">
-										<a href="./about-us.html">О нас</a>
-									</li>
-									<li class="list-item">
-										<a href="#build-steps">Ход строительства</a>
-									</li>
-									<li class="list-item">
-										<a href="#videoSect">Видео объекта</a>
-									</li>
-									<li class="list-item">
-										<a href="#data-slider">Детали квартир</a>
-									</li>
-									<li class="list-item">
-										<a href="#slider">Галерея</a>
-									</li>
-									<li class="list-item">
-										<a href="#apartment-select">Планировки квартир</a>
-									</li>
-									<li class="list-item">
-										<a href="#contacts">Контакты</a>
-									</li>
-								</ul>
-							</nav>
-							<div class="header__btn-wrapper ms-auto ms-lg-1">
-								<button data-modal>Заказать звонок</button>
-							</div>
-							<div class="menu-toggle">
-								<i class="fas fa-bars"></i>
-								<i class="fas fa-times"></i>
-							</div>
-						</div>
-					</div>
-				</header>
-				<section class="hero">
-					<div class="hero__container container">
-						<div class="hero__content">
-							<h1 class="hero__title">Старт продаж ЖК “Medina Towers”</h1>
-						</div>
-					</div>
-				</section>
-			</div>
 
-			<section class="data" id="data">
-				<div class="container-fluid">
-					<div class="data__row row">
-						<div class="data__left col-6">
-							<img src="./assets/images/data-img.png" alt="building" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Titan</title>
+	<link rel="icon" href="./assets/images/logog.svg" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./utils/bootstrap-5.0.2-dist/css/bootstrap.css" />
+	<link href="./styles/css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+	<main>
+		<div class="main-cont">
+			<header class="header">
+				<div class="header__container container">
+					<div class="d-flex align-items-center flex-wrap pt-5 justify-content-end">
+						<p class="header__row__address m-0 me-0 me-lg-4 d-flex align-items-center">
+							<img class="me-2" src="./assets/images/location__icon.svg" alt="">
+							г. Нур-Султан, улица Казанат 1/1, Бизнес центр “TIME”
+						</p>
+						<div class="header__row__contacts d-flex align-items-center">
+							<img class="me-2" src="./assets/images/bi_phone.svg" alt="">
+							<a class="me-2" href="tel:+77088028888">+7 (708) 802 88 88</a>
+							<a href="tel:+77088038888">+7 (708) 803 88 88</a>
 						</div>
+					</div>
+					<div class="header__row">
+						<div class="header__logo d-flex align-items-center justify-content-center">
+							<a href="./index.html">
+								<img src="assets/images/logo.png" alt="logo" />
+							</a>
+						</div>
+						<nav class="header__nav">
+							<ul class="nav-list justify-content-lg-center justify-content-start">
+								<li class="d-flex d-lg-none justify-content-center nav-list-logo mb-5">
+									<img src="./assets/images/logo.png" alt="">
+								</li>
+								<li class="list-item">
+									<a href="./about-us.html">О нас</a>
+								</li>
+								<li class="list-item">
+									<a href="#build-steps">Ход строительства</a>
+								</li>
+								<li class="list-item">
+									<a href="#videoSect">Видео объекта</a>
+								</li>
+								<li class="list-item">
+									<a href="#data-slider">Детали квартир</a>
+								</li>
+								<li class="list-item">
+									<a href="#slider">Галерея</a>
+								</li>
+								<li class="list-item">
+									<a href="#apartment-select">Планировки квартир</a>
+								</li>
+								<li class="list-item">
+									<a href="#contacts">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__btn-wrapper ms-auto ms-lg-1">
+							<button data-modal>Заказать звонок</button>
+						</div>
+						<div class="menu-toggle">
+							<i class="fas fa-bars"></i>
+							<i class="fas fa-times"></i>
 						<div class="data__right col-6">
 							<div class="right-wrapper">
 								<h2 class="data__title">ЖК “Medina Towers”</h2>
@@ -107,319 +90,308 @@
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<section class="container build-steps pt-5 pb-5" id="build-steps">
-				<h2 class="build-steps__title">
-					Ход строительства<br />
-					ЖК “Medina Towers”
-				</h2>
-
-				<div class="build-steps__steps d-flex flex-wrap mt-5 pt-5">
-					<div class="build-steps__step">
-						<div class="build-steps__indicator">
-							<div class="build-steps__indicator__circle active"></div>
-							<div class="build-steps__indicator__border"></div>
-						</div>
-
-						<div class="build-steps__desc">
-							<h3 class="m-0 mt-4 text-light">Июнь 2021</h3>
-							<p class="m-0">Начало строительства жилого дома</p>
-						</div>
-					</div>
-
-					<div class="build-steps__step">
-						<div class="build-steps__indicator">
-							<div class="build-steps__indicator__circle"></div>
-							<div class="build-steps__indicator__border"></div>
-						</div>
-
-						<div class="build-steps__desc">
-							<h3 class="m-0 mt-4">Май 2022</h3>
-							<p class="m-0">Начало отделочных работ строительства</p>
-						</div>
-					</div>
-
-					<div class="build-steps__step">
-						<div class="build-steps__indicator">
-							<div class="build-steps__indicator__circle"></div>
-							<div class="build-steps__indicator__border"></div>
-						</div>
-
-						<div class="build-steps__desc">
-							<h3 class="m-0 mt-4">Август 2023</h3>
-							<p class="m-0">Завершение строительства</p>
-						</div>
-					</div>
-
-					<div class="build-steps__step">
-						<div class="build-steps__indicator">
-							<div class="build-steps__indicator__circle"></div>
-							<div class="build-steps__indicator__border"></div>
-						</div>
-
-						<div class="build-steps__desc">
-							<h3 class="m-0 mt-4">Август 2023</h3>
-							<p class="m-0">Завершение строительства</p>
-						</div>
+			</header>
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__content">
+						<h1 class="hero__title">Старт продаж ЖК “Medina Towers”</h1>
 					</div>
 				</div>
 			</section>
+		</div>
 
-			<section class="video" id="videoSect">
-				<div class="container-sm">
-					<div class="video__inner">
-						<h2 class="video__title">Посмотрите ролик о ЖК “Medina Towers”</h2>
-						<p class="video__description">
-							Современный, стильный комплекс у подножья гор, с красивым панорамным видом.
-						</p>
-						<div class="video__img">
-							<img src="./assets/images/video-background.png" alt="" />
-							<img
-								src="./assets/images/video-player.png"
-								class="play-btn"
-								onclick="playVideo('./assets/video/video.mp4')"
-							/>
-						</div>
-						<div class="video-player" id="videoPlayer">
-							<video width="100%" controls id="video">
-								<source src="./assets/video/video.mp4" type="video/mp4" />
-							</video>
-							<svg
-								onclick="stopVideo()"
-								xmlns="http://www.w3.org/2000/svg"
-								width="1324"
-								height="32"
-								fill="currentColor"
-								class="bi bi-x-circle-fill close-btn"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
-								/>
-							</svg>
-							<i class="bi bi-x-square-fill"></i>
-						</div>
+		<section class="data" id="data">
+			<div class="container-fluid">
+				<div class="data__row row">
+					<div class="data__left col-6">
+						<img src="./assets/images/data-img.png" alt="building" />
 					</div>
-					<svg
-						class="video__four"
-						width="200"
-						height="150"
-						viewBox="0 0 200 150"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							opacity="0.02"
-							d="M0.6875 284V275.992C7.45833 275.732 12.6016 275.211 16.1172 274.43C19.6328 273.518 22.5625 271.76 24.9062 269.156C27.3802 266.552 28.9427 263.232 29.5938 259.195C30.2448 255.159 30.5703 249.299 30.5703 241.617V43.1797C30.5703 35.6276 30.2448 29.8333 29.5938 25.7969C28.9427 21.6302 27.3802 18.2448 24.9062 15.6406C22.5625 13.0365 19.6328 11.3438 16.1172 10.5625C12.6016 9.65104 7.45833 9.0651 0.6875 8.80469V0.796875C14.099 1.57812 35.1276 1.96875 63.7734 1.96875C89.6849 1.96875 109.867 1.57812 124.32 0.796875V8.80469C117.419 9.0651 112.211 9.65104 108.695 10.5625C105.18 11.3438 102.185 13.0365 99.7109 15.6406C97.3672 18.2448 95.8698 21.5651 95.2188 25.6016C94.5677 29.638 94.2422 35.4974 94.2422 43.1797V241.617C94.2422 249.169 94.5677 255.029 95.2188 259.195C95.8698 263.232 97.3672 266.552 99.7109 269.156C102.185 271.76 105.18 273.518 108.695 274.43C112.341 275.211 117.549 275.732 124.32 275.992V284C109.867 283.219 89.6849 282.828 63.7734 282.828C35.1276 282.828 14.099 283.219 0.6875 284ZM132.719 8.80469V0.796875C148.734 1.57812 169.047 1.96875 193.656 1.96875C221.13 1.96875 241.378 1.57812 254.398 0.796875V8.80469C244.372 9.19531 237.146 10.4323 232.719 12.5156C228.422 14.4688 226.273 18.1797 226.273 23.6484C226.273 28.2057 227.836 34.4557 230.961 42.3984L301.664 221.5L350.883 88.6875C358.305 68.5052 362.016 52.3594 362.016 40.25C362.016 29.4427 359.151 21.5651 353.422 16.6172C347.823 11.6693 339.49 9.0651 328.422 8.80469V0.796875C346.391 1.57812 362.992 1.96875 378.227 1.96875C390.466 1.96875 400.622 1.57812 408.695 0.796875V8.80469C393.591 14.6641 381.417 30.4844 372.172 56.2656L287.602 284.781C281.872 284.521 277.25 284.391 273.734 284.391C270.219 284.391 265.596 284.521 259.867 284.781L157.914 34.3906C151.273 17.8542 142.875 9.32552 132.719 8.80469Z"
-							fill="white"
-						/>
-					</svg>
-				</div>
-			</section>
-
-			<section class="data-slider" id="data-slider">
-				<div class="container-fluid">
-					<div class="data-slider__row row">
-						<div class="data-slider__left col-5">
-							<div class="data-slider__text">
-								<h2 class="data-slider__title">Преимущества ЖК “Medina Towers”</h2>
-								<p class="data-slider__description">
-									Каков он, дом вашей мечты? Наверняка в нем тепло и уютно. В нем растут будущие
-									покорители мира, будущие спортсмены и музыканты, предприниматели и врачи. В нем
-									всегда горит семейный очаг, слышен счастливый смех или царит успокаивающая тишина.
-									Желания людей всегда разные, но одна мечта всех объединяет - мечта о своем
-									собственном, комфортном и удобном доме.
-								</p>
-								<p class="data-slider__description">
-									Мы, вдохновленные идеей создания дома вашей мечты, решились на проект “Медина
-									Тауэрс”, который будет удобен для всех и даст возможность реализации желаний и
-									целей. Это современный, стильный дом, который состоит из 14 этажей.
-								</p>
-							</div>
-						</div>
-						<div class="data-slider__right col-7">
-							<ul class="data-slider__list" id="scroll_container">
-								<li class="list-item">
-									<div class="data-slider__item">
-										<p>
-											Медина Тауэрс расположен на левом берегу реки Есиль на пересечении улиц
-											(добавить названия). Рядом находятся (перечислить). Удобное расположение и
-											инфраструктура, зеленый двор с цветниками, который создает уютную
-											расслабляющую “домашнюю” обстановку. Вы любитель покоя и тишины или
-											двигаетесь в ритме столицы? Оставайтесь в центре событий, находясь в стороне
-											от городской суеты и шума.
-										</p>
-									</div>
-									<p class="list-item__description">Локация</p>
+					<div class="data__right col-6">
+						<div class="right-wrapper">
+							<h2 class="data__title">ЖК “Medina Towers”</h2>
+							<ul class="data__items">
+								<li class="data__item">
+									<p>200</p>
+									<span>Квартир</span>
 								</li>
-								<li class="list-item">
-									<div class="data-slider__item">
-										<p>
-											Двор для всей семьи. Двор оснащен освещением и детской площадкой. Для вашего
-											ребёнка установлены горки, качели и песочница для игр. Детская площадка
-											рассчитана на детей разного возраста. Конструкция из дерева и пластика
-											гарантирует долговечность и безопасность в эксплуатации. Вы сможете
-											отдохнуть, поболтать с соседями, поиграть с ребенком или насладиться
-											вечерней прохладой на удобных лавочках в любое время.
-										</p>
-									</div>
-									<p class="list-item__description">Двор для всех</p>
+								<li class="data__item">
+									<p>50</p>
+									<span>Помещений</span>
 								</li>
-								<li class="list-item">
-									<div class="data-slider__item">
-										<p>
-											Владельцам авто Для вашего автомобиля имеется парковка. В паркинге 80 мест.
-											Вы сможете оставлять машину как на внутренней так и на внешней парковочной
-											зоне. На внутреннюю зону можно спуститься на лифте. Также имеется гостевая
-											парковка для посетителей и собственников первого этажа, где будут
-											расположены офисы и коммерческие помещения.
-										</p>
-									</div>
-									<p class="list-item__description">Парковка</p>
-								</li>
-								<li class="list-item">
-									<div class="data-slider__item">
-										<p>
-											Стены - газоблок Каркас здания - монолитный железобетон Цоколь и паркинг -
-											натуральный гранит Витражи с алюминиевыми энергосберегающими рамами
-											Фиброцементные панели. Водонепроницаемая кровля, которая выдерживает любые
-											погодные условия. Мы подошли к строительству со всей ответственностью и
-											качеством.
-										</p>
-									</div>
-									<p class="list-item__description">Архитектура</p>
-								</li>
-								<li class="list-item">
-									<div class="data-slider__item">
-										<p>
-											Охрана и видеонаблюдение 24/7 позволит вам чувствовать себя в безопасности
-											круглые сутки. Камеры установлены на всех зонах, как видимых так и теневых.
-											Закрытый двор обеспечивает безопасную территорию для вашего отдыха и для игр
-											детей.
-										</p>
-									</div>
-									<p class="list-item__description">Безопасность</p>
-								</li>
-								<li class="list-item">
-									<div class="data-slider__item">
-										<p>
-											На входе вас ждет современный, дизайнерский холл, просторный и светлый.
-											Также подъезд дома оснащен местами для колясок, самокатов и велосипедов. Вам
-											не нужно беспокоиться о хранении детского транспорта. Мы заботимся о вас и
-											поэтому установили лифт по южнокорейской технологии, он бесшумный, быстрый и
-											безопасный. Войти в подъезд возможно только с использованием ключа, это
-											создает ограничение для посторонних.
-										</p>
-									</div>
-									<p class="list-item__description">Подъезд</p>
+								<li class="data__item">
+									<p>20 000</p>
+									<span>Площадь</span>
 								</li>
 							</ul>
-							<span class="arrow">
-								<svg
-									class="swiper-btn-next history__btn"
-									width="64"
-									height="25"
-									viewBox="0 0 64 25"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path d="M0 12.5H62.5M62.5 12.5L51 1M62.5 12.5L51 24" stroke="#D9A85D" />
-								</svg>
-							</span>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="slider" id="slider">
-				<div class="container">
-					<h2 class="slider__title">Галерея</h2>
-					<div class="slider__wrapper">
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="./assets/images/data-img.png" alt="" />
+		<section class="container build-steps pt-5 pb-5" id="build-steps">
+			<h2 class="build-steps__title">
+				Ход строительства<br />
+				ЖК “Medina Towers”
+			</h2>
+
+			<div class="build-steps__steps d-flex flex-wrap mt-5 pt-5">
+				<div class="build-steps__step">
+					<div class="build-steps__indicator">
+						<div class="build-steps__indicator__circle active"></div>
+						<div class="build-steps__indicator__border"></div>
+					</div>
+
+					<div class="build-steps__desc">
+						<h3 class="m-0 mt-4 text-light">Июнь 2021</h3>
+						<p class="m-0">Начало строительства жилого дома</p>
+					</div>
+				</div>
+
+				<div class="build-steps__step">
+					<div class="build-steps__indicator">
+						<div class="build-steps__indicator__circle"></div>
+						<div class="build-steps__indicator__border"></div>
+					</div>
+
+					<div class="build-steps__desc">
+						<h3 class="m-0 mt-4">Май 2022</h3>
+						<p class="m-0">Начало отделочных работ строительства</p>
+					</div>
+				</div>
+
+				<div class="build-steps__step">
+					<div class="build-steps__indicator">
+						<div class="build-steps__indicator__circle"></div>
+						<div class="build-steps__indicator__border"></div>
+					</div>
+
+					<div class="build-steps__desc">
+						<h3 class="m-0 mt-4">Август 2023</h3>
+						<p class="m-0">Завершение строительства</p>
+					</div>
+				</div>
+
+				<div class="build-steps__step">
+					<div class="build-steps__indicator">
+						<div class="build-steps__indicator__circle"></div>
+						<div class="build-steps__indicator__border"></div>
+					</div>
+
+					<div class="build-steps__desc">
+						<h3 class="m-0 mt-4">Август 2023</h3>
+						<p class="m-0">Завершение строительства</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="video" id="videoSect">
+			<div class="container-sm">
+				<div class="video__inner">
+					<h2 class="video__title">Посмотрите ролик о ЖК “Medina Towers”</h2>
+					<p class="video__description">
+						Современный, стильный комплекс у подножья гор, с красивым панорамным видом.
+					</p>
+					<div class="video__img">
+						<img src="./assets/images/video-background.png" alt="" />
+						<img src="./assets/images/video-player.png" class="play-btn"
+							onclick="playVideo('./assets/video/video.mp4')" />
+					</div>
+					<div class="video-player" id="videoPlayer">
+						<video width="100%" controls id="video">
+							<source src="./assets/video/video.mp4" type="video/mp4" />
+						</video>
+						<svg onclick="stopVideo()" xmlns="http://www.w3.org/2000/svg" width="1324" height="32" fill="currentColor"
+							class="bi bi-x-circle-fill close-btn" viewBox="0 0 16 16">
+							<path
+								d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+						</svg>
+						<i class="bi bi-x-square-fill"></i>
+					</div>
+				</div>
+				<svg class="video__four" width="200" height="150" viewBox="0 0 200 150" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.02"
+						d="M0.6875 284V275.992C7.45833 275.732 12.6016 275.211 16.1172 274.43C19.6328 273.518 22.5625 271.76 24.9062 269.156C27.3802 266.552 28.9427 263.232 29.5938 259.195C30.2448 255.159 30.5703 249.299 30.5703 241.617V43.1797C30.5703 35.6276 30.2448 29.8333 29.5938 25.7969C28.9427 21.6302 27.3802 18.2448 24.9062 15.6406C22.5625 13.0365 19.6328 11.3438 16.1172 10.5625C12.6016 9.65104 7.45833 9.0651 0.6875 8.80469V0.796875C14.099 1.57812 35.1276 1.96875 63.7734 1.96875C89.6849 1.96875 109.867 1.57812 124.32 0.796875V8.80469C117.419 9.0651 112.211 9.65104 108.695 10.5625C105.18 11.3438 102.185 13.0365 99.7109 15.6406C97.3672 18.2448 95.8698 21.5651 95.2188 25.6016C94.5677 29.638 94.2422 35.4974 94.2422 43.1797V241.617C94.2422 249.169 94.5677 255.029 95.2188 259.195C95.8698 263.232 97.3672 266.552 99.7109 269.156C102.185 271.76 105.18 273.518 108.695 274.43C112.341 275.211 117.549 275.732 124.32 275.992V284C109.867 283.219 89.6849 282.828 63.7734 282.828C35.1276 282.828 14.099 283.219 0.6875 284ZM132.719 8.80469V0.796875C148.734 1.57812 169.047 1.96875 193.656 1.96875C221.13 1.96875 241.378 1.57812 254.398 0.796875V8.80469C244.372 9.19531 237.146 10.4323 232.719 12.5156C228.422 14.4688 226.273 18.1797 226.273 23.6484C226.273 28.2057 227.836 34.4557 230.961 42.3984L301.664 221.5L350.883 88.6875C358.305 68.5052 362.016 52.3594 362.016 40.25C362.016 29.4427 359.151 21.5651 353.422 16.6172C347.823 11.6693 339.49 9.0651 328.422 8.80469V0.796875C346.391 1.57812 362.992 1.96875 378.227 1.96875C390.466 1.96875 400.622 1.57812 408.695 0.796875V8.80469C393.591 14.6641 381.417 30.4844 372.172 56.2656L287.602 284.781C281.872 284.521 277.25 284.391 273.734 284.391C270.219 284.391 265.596 284.521 259.867 284.781L157.914 34.3906C151.273 17.8542 142.875 9.32552 132.719 8.80469Z"
+						fill="white" />
+				</svg>
+			</div>
+		</section>
+
+		<section class="data-slider" id="data-slider">
+			<div class="container-fluid">
+				<div class="data-slider__row row">
+					<div class="data-slider__left col-5">
+						<div class="data-slider__text">
+							<h2 class="data-slider__title">Преимущества ЖК “Medina Towers”</h2>
+							<p class="data-slider__description">
+								Каков он, дом вашей мечты? Наверняка в нем тепло и уютно. В нем растут будущие
+								покорители мира, будущие спортсмены и музыканты, предприниматели и врачи. В нем
+								всегда горит семейный очаг, слышен счастливый смех или царит успокаивающая тишина.
+								Желания людей всегда разные, но одна мечта всех объединяет - мечта о своем
+								собственном, комфортном и удобном доме.
+							</p>
+							<p class="data-slider__description">
+								Мы, вдохновленные идеей создания дома вашей мечты, решились на проект “Медина
+								Тауэрс”, который будет удобен для всех и даст возможность реализации желаний и
+								целей. Это современный, стильный дом, который состоит из 14 этажей.
+							</p>
+						</div>
+					</div>
+					<div class="data-slider__right col-7">
+						<ul class="data-slider__list" id="scroll_container">
+							<li class="list-item">
+								<div class="data-slider__item">
+									<p>
+										Медина Тауэрс расположен на левом берегу реки Есиль на пересечении улиц
+										(добавить названия). Рядом находятся (перечислить). Удобное расположение и
+										инфраструктура, зеленый двор с цветниками, который создает уютную
+										расслабляющую “домашнюю” обстановку. Вы любитель покоя и тишины или
+										двигаетесь в ритме столицы? Оставайтесь в центре событий, находясь в стороне
+										от городской суеты и шума.
+									</p>
 								</div>
-								<div class="swiper-slide">
-									<img src="./assets/images/data-img.png" alt="" />
+								<p class="list-item__description">Локация</p>
+							</li>
+							<li class="list-item">
+								<div class="data-slider__item">
+									<p>
+										Двор для всей семьи. Двор оснащен освещением и детской площадкой. Для вашего
+										ребёнка установлены горки, качели и песочница для игр. Детская площадка
+										рассчитана на детей разного возраста. Конструкция из дерева и пластика
+										гарантирует долговечность и безопасность в эксплуатации. Вы сможете
+										отдохнуть, поболтать с соседями, поиграть с ребенком или насладиться
+										вечерней прохладой на удобных лавочках в любое время.
+									</p>
 								</div>
-								<div class="swiper-slide">
-									<img src="./assets/images/data-img.png" alt="" />
+								<p class="list-item__description">Двор для всех</p>
+							</li>
+							<li class="list-item">
+								<div class="data-slider__item">
+									<p>
+										Владельцам авто Для вашего автомобиля имеется парковка. В паркинге 80 мест.
+										Вы сможете оставлять машину как на внутренней так и на внешней парковочной
+										зоне. На внутреннюю зону можно спуститься на лифте. Также имеется гостевая
+										парковка для посетителей и собственников первого этажа, где будут
+										расположены офисы и коммерческие помещения.
+									</p>
 								</div>
+								<p class="list-item__description">Парковка</p>
+							</li>
+							<li class="list-item">
+								<div class="data-slider__item">
+									<p>
+										Стены - газоблок Каркас здания - монолитный железобетон Цоколь и паркинг -
+										натуральный гранит Витражи с алюминиевыми энергосберегающими рамами
+										Фиброцементные панели. Водонепроницаемая кровля, которая выдерживает любые
+										погодные условия. Мы подошли к строительству со всей ответственностью и
+										качеством.
+									</p>
+								</div>
+								<p class="list-item__description">Архитектура</p>
+							</li>
+							<li class="list-item">
+								<div class="data-slider__item">
+									<p>
+										Охрана и видеонаблюдение 24/7 позволит вам чувствовать себя в безопасности
+										круглые сутки. Камеры установлены на всех зонах, как видимых так и теневых.
+										Закрытый двор обеспечивает безопасную территорию для вашего отдыха и для игр
+										детей.
+									</p>
+								</div>
+								<p class="list-item__description">Безопасность</p>
+							</li>
+							<li class="list-item">
+								<div class="data-slider__item">
+									<p>
+										На входе вас ждет современный, дизайнерский холл, просторный и светлый.
+										Также подъезд дома оснащен местами для колясок, самокатов и велосипедов. Вам
+										не нужно беспокоиться о хранении детского транспорта. Мы заботимся о вас и
+										поэтому установили лифт по южнокорейской технологии, он бесшумный, быстрый и
+										безопасный. Войти в подъезд возможно только с использованием ключа, это
+										создает ограничение для посторонних.
+									</p>
+								</div>
+								<p class="list-item__description">Подъезд</p>
+							</li>
+						</ul>
+						<span class="arrow">
+							<svg class="swiper-btn-next history__btn" width="64" height="25" viewBox="0 0 64 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 12.5H62.5M62.5 12.5L51 1M62.5 12.5L51 24" stroke="#D9A85D" />
+							</svg>
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slider" id="slider">
+			<div class="container">
+				<h2 class="slider__title">Галерея</h2>
+				<div class="slider__wrapper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="./assets/images/data-img.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./assets/images/data-img.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./assets/images/data-img.png" alt="" />
 							</div>
 						</div>
-						<span class="swiper-prev d-none d-md-flex">
-							<svg
-								width="18"
-								height="16"
-								viewBox="0 0 18 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M7.5 15.5L8.5575 14.4425L2.8725 8.75H18V7.25H2.8725L8.5575 1.5575L7.5 0.5L0 8L7.5 15.5Z"
-									fill="#D9A85D"
-								/>
-							</svg>
-						</span>
-						<span class="swiper-next d-none d-md-flex">
-							<svg
-								width="18"
-								height="16"
-								viewBox="0 0 18 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M10.5 0.5L9.4275 1.54475L15.1125 7.25H0V8.75H15.1125L9.4275 14.4298L10.5 15.5L18 8L10.5 0.5Z"
-									fill="#D9A85D"
-								/>
-							</svg>
-						</span>
 					</div>
+					<span class="swiper-prev d-none d-md-flex">
+						<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.5 15.5L8.5575 14.4425L2.8725 8.75H18V7.25H2.8725L8.5575 1.5575L7.5 0.5L0 8L7.5 15.5Z"
+								fill="#D9A85D" />
+						</svg>
+					</span>
+					<span class="swiper-next d-none d-md-flex">
+						<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.5 0.5L9.4275 1.54475L15.1125 7.25H0V8.75H15.1125L9.4275 14.4298L10.5 15.5L18 8L10.5 0.5Z"
+								fill="#D9A85D" />
+						</svg>
+					</span>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="container apartment-select mt-5 ps-1 pe-1 mb-5 pt-5 pb-5" id="apartment-select">
-				<h2 class="m-0 mb-5 apartment-select__main-title">Выберите свою квартиру</h2>
+		<section class="container apartment-select mt-5 ps-1 pe-1 mb-5 pt-5 pb-5" id="apartment-select">
+			<h2 class="m-0 mb-5 apartment-select__main-title">Выберите свою квартиру</h2>
 
-				<div class="apartment-select__wrapper">
-					<div class="apartment-select__dashboard">
-						<div class="mt-5 mb-5">
-							<h3 class="apartment-select__subtitles m-0 mb-3">Количество комнат</h3>
-							<div class="apartment-select__rooms-amounts">
-								<button
-									value="room_1"
-									class="
+			<div class="apartment-select__wrapper">
+				<div class="apartment-select__dashboard">
+					<div class="mt-5 mb-5">
+						<h3 class="apartment-select__subtitles m-0 mb-3">Количество комнат</h3>
+						<div class="apartment-select__rooms-amounts">
+							<button value="room_1" class="
 										apartment-select__amount apartment-select__btn apartment-select__active-btn
 										col-4
-									"
-								>
-									1-х комнатные
-								</button>
-								<button value="room_2" class="apartment-select__amount apartment-select__btn col-4">
-									2-х комнатные
-								</button>
-								<button value="room_3" class="apartment-select__amount apartment-select__btn col-4">
-									3-х комнатные
-								</button>
-							</div>
-						</div>
-
-						<div class="mt-5 mb-5">
-							<h3 class="m-0 mb-3 apartment-select__subtitles">Площадь квартир</h3>
-							<div class="apartment-select__rooms-areas"></div>
+									">
+								1-х комнатные
+							</button>
+							<button value="room_2" class="apartment-select__amount apartment-select__btn col-4">
+								2-х комнатные
+							</button>
+							<button value="room_3" class="apartment-select__amount apartment-select__btn col-4">
+								3-х комнатные
+							</button>
 						</div>
 					</div>
 
-					<img
-						src="./assets/images/apartments/1kv 38.68.png"
-						class="apartment-select__selected-image"
-						alt=""
-					/>
+					<div class="mt-5 mb-5">
+						<h3 class="m-0 mb-3 apartment-select__subtitles">Площадь квартир</h3>
+						<div class="apartment-select__rooms-areas"></div>
+					</div>
 				</div>
-			</section>
+
+				<img src="./assets/images/apartments/1kv 38.68.png" class="apartment-select__selected-image" alt="" />
+			</div>
+		</section>
 
 		<section class="container com_premises">
 			<h2 class="com_premises__title">Коммерческие помещения</h2>
@@ -429,186 +401,290 @@
 				Предусмотрена гостевая парковка для вас и ваших клиентов.
 				Уверены, что с нами вы сможете реализовать все свои проекты.
 			</p>
-
-			
+			<h6>Доступные площади:</h6>
+			<div class="com_premises__selections">
+				<ul class="com_premises__selections__wrapper">
+					<li value="./assets/images/com_premises/180.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/180.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">180 м2</p>
+						<p class="m-0">1 этаж</p>
+					</li>
+					<li value="./assets/images/com_premises/253.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/253.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">253 м2</p>
+						<p class="m-0">1 этаж</p>
+					</li>
+					<li value="./assets/images/com_premises/59.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/59.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">59 м2</p>
+						<p class="m-0">1 этаж</p>
+					</li>
+					<li value="./assets/images/com_premises/123.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/123.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">123 м2</p>
+						<p class="m-0">1 этаж</p>
+					</li>
+				</ul>
+				<ul class="com_premises__selections__wrapper">
+					<li value="./assets/images/com_premises/202.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/202.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">202 м2</p>
+						<p class="m-0">2 этаж</p>
+					</li>
+					<li value="./assets/images/com_premises/63.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/63.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">63 м2</p>
+						<p class="m-0">2 этаж</p>
+					</li>
+					<li value="./assets/images/com_premises/263.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/263.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">263 м2</p>
+						<p class="m-0">2 этаж</p>
+					</li>
+					<li value="./assets/images/com_premises/128.jpg" class='com_premises_row'>
+						<div class="images-side">
+							<img src="./assets/images/com_premises/128.jpg" alt="">
+							<div class="images-side__drop">
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+										fill="currentColor" />
+								</svg>
+							</div>
+						</div>
+						<p class="m-0">128 м2</p>
+						<p class="m-0">2 этаж</p>
+					</li>
+				</ul>
+			</div>
+			<div id="com_premises__modal">
+				<img id="com_premises__modal__img" src="" alt="">
+			</div>
 		</section>
 
-			<section class="location mt-5 mb-5">
-				<div class="container">
-					<div class="location__row">
-						<div class="location__left">
-							<h2 class="location__title">Приходите в отдел продаж</h2>
-							<p class="location__description">
-								Уже выбрали свою квартиру? <br><br>
-								Приходите в наш отдел продаж по адресу, мы ответим на все интересующие вас вопросы. 
-							</p>
+		<section class="location mt-5 mb-5">
+			<div class="container">
+				<div class="location__row">
+					<div class="location__left">
+						<h2 class="location__title">Приходите в отдел продаж</h2>
+						<p class="location__description">
+							Уже выбрали свою квартиру? <br><br>
+							Приходите в наш отдел продаж по адресу, мы ответим на все интересующие вас вопросы.
+						</p>
 
-							<ul class="location__contacts d-flex mt-5 flex-column">
+						<ul class="location__contacts d-flex mt-5 flex-column">
 
-								<li class="d-flex align-items-center">
-									<img src="./assets/images/bi_phone.svg" alt="">
+							<li class="d-flex align-items-center">
+								<img src="./assets/images/bi_phone.svg" alt="">
 
-									<div class="d-flex flex-column">
-										<a href="tel:+77088028888">+7 (708) 802 88 88</a>
-										<a href="tel:+77088038888">+7 (708) 803 88 88</a>
-									</div>
-								</li>
+								<div class="d-flex flex-column">
+									<a href="tel:+77088028888">+7 (708) 802 88 88</a>
+									<a href="tel:+77088038888">+7 (708) 803 88 88</a>
+								</div>
+							</li>
 
-								<li class="d-flex align-items-center">
-									<img src="./assets/images/whatsap-light-icon.svg" alt="">
+							<li class="d-flex align-items-center">
+								<img src="./assets/images/whatsap-light-icon.svg" alt="">
 
-									<div>
-										<a href="tel:+77088028888">+7 (708) 802 88 88</a>
-									</div>
-								</li>
+								<div>
+									<a href="tel:+77088028888">+7 (708) 802 88 88</a>
+								</div>
+							</li>
 
-								<li class="d-flex align-items-center">
-									<img src="./assets/images/location__icon.svg" alt="">
+							<li class="d-flex align-items-center">
+								<img src="./assets/images/location__icon.svg" alt="">
 
-									<div>
-										<p class="m-0">г. Нур-Султан, улица Казанат 1/1, Бизнес центр “TIME”</p>
-									</div>
-								</li>
-							
-							</ul>
-						</div>
-						<div class="location__right">
-							<iframe
-								class="location__iframe hide"
-								src="https://yandex.ru/map-widget/v1/?um=constructor%3A695110ea067d0a2cbfc98ff28c510fec2f6d10e313d9fa10b151179f0039e964&amp;source=constructor"
-								frameborder="0"
-							></iframe>
-							<img class="location__fake-img" src="./assets/images/location-img.png" alt="map" />
-						</div>
+								<div>
+									<p class="m-0">г. Нур-Султан, улица Казанат 1/1, Бизнес центр “TIME”</p>
+								</div>
+							</li>
+
+						</ul>
 					</div>
-				</div>
-			</section>
-
-			<section class="form" id="contacts">
-				<div class="form__container container">
-					<div class="form__row">
-						<h2 class="form__title">Для личной консультации, укажите ваши контакты</h2>
-						<p class="form__description">Менеджер свяжется с вами и поможет сделать правильный выбор.</p>
-						<form action="" class="form__form">
-							<input class="form__input" type="text" placeholder="Ваше имя" />
-							<input class="form__input" type="tel" placeholder="Номер телефона" />
-							<button type="submit" class="form__btn">Связаться со мной</button>
-						</form>
+					<div class="location__right">
+						<iframe class="location__iframe hide"
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A695110ea067d0a2cbfc98ff28c510fec2f6d10e313d9fa10b151179f0039e964&amp;source=constructor"
+							frameborder="0"></iframe>
+						<img class="location__fake-img" src="./assets/images/location-img.png" alt="map" />
 					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<div class="footer__container container">
-				<div class="footer__logo">
-					<img src="assets/images/logo.png" alt="logo" />
-				</div>
-				<nav class="footer__nav">
-					<ul class="nav-list">
-						<li class="list-item">
-							<a href="./about-us.html">О нас</a>
-						</li>
-						<li class="list-item">
-							<a href="#build-steps">Ход строительства</a>
-						</li>
-						<li class="list-item">
-							<a href="#video">Видео объекта</a>
-						</li>
-						<li class="list-item">
-							<a href="#data-slider">Детали квартир</a>
-						</li>
-						<li class="list-item">
-							<a href="#slider">Галерея</a>
-						</li>
-						<li class="list-item">
-							<a href="#apartment-select">Планировки квартир</a>
-						</li>
-						<li class="list-item">
-							<a href="#contacts">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="footer__bottom">
-					<p>© 2021 Титан. All rights reserved</p>
-					<img src="assets/images/instagram.png" alt="instagram" />
 				</div>
 			</div>
-		</footer>
+		</section>
 
-		<div class="modal">
-			<div class="modal__dialog">
-				<div class="modal__content">
-					<form action="#">
-						<div class="modal__close">
-							<svg
-								data-close
-								width="13"
-								height="13"
-								viewBox="0 0 13 13"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M7.94002 5.99999L12.8 1.13999C12.9092 1.01246 12.9663 0.848406 12.9598 0.680622C12.9533 0.512838 12.8838 0.353679 12.7651 0.234949C12.6463 0.116219 12.4872 0.0466642 12.3194 0.0401834C12.1516 0.0337026 11.9876 0.0907736 11.86 0.199991L7.00002 5.05999L2.14002 0.193324C2.01249 0.0841068 1.84844 0.0270364 1.68065 0.0335172C1.51287 0.039998 1.35371 0.109553 1.23498 0.228282C1.11625 0.347012 1.0467 0.506171 1.04022 0.673955C1.03373 0.841739 1.09081 1.00579 1.20002 1.13332L6.06002 5.99999L1.19336 10.86C1.12357 10.9198 1.06689 10.9933 1.02687 11.076C0.986857 11.1587 0.96437 11.2488 0.960824 11.3406C0.957278 11.4324 0.972748 11.524 1.00626 11.6095C1.03978 11.6951 1.09062 11.7728 1.15559 11.8378C1.22056 11.9027 1.29826 11.9536 1.38381 11.9871C1.46936 12.0206 1.56091 12.0361 1.65273 12.0325C1.74454 12.029 1.83463 12.0065 1.91734 11.9665C2.00005 11.9265 2.07359 11.8698 2.13336 11.8L7.00002 6.93999L11.86 11.8C11.9876 11.9092 12.1516 11.9663 12.3194 11.9598C12.4872 11.9533 12.6463 11.8838 12.7651 11.765C12.8838 11.6463 12.9533 11.4871 12.9598 11.3194C12.9663 11.1516 12.9092 10.9875 12.8 10.86L7.94002 5.99999Z"
-									fill="#C71616"
-								/>
-							</svg>
-						</div>
-						<h3 class="modal__title">Закажите обратный звонок</h3>
-						<p class="modal__description">Консультация нашего менеджера поможет Вам</p>
-						<input required placeholder="Ваше имя" name="name" type="text" class="modal__input" />
-						<input
-							required
-							placeholder="Ваш номер телефона"
-							name="phone"
-							type="phone"
-							class="modal__input"
-						/>
-						<button class="modal__btn">Перезвонить мне</button>
+		<section class="form" id="contacts">
+			<div class="form__container container">
+				<div class="form__row">
+					<h2 class="form__title">Для личной консультации, укажите ваши контакты</h2>
+					<p class="form__description">Менеджер свяжется с вами и поможет сделать правильный выбор.</p>
+					<form action="" class="form__form">
+						<input class="form__input" type="text" placeholder="Ваше имя" />
+						<input class="form__input" type="tel" placeholder="Номер телефона" />
+						<button type="submit" class="form__btn">Связаться со мной</button>
 					</form>
-					<div class="whatsapp">
-						<a href="https://wa.me/77088028888"
-							><img src="./assets/images/logos_whatsapp.png" alt="logo whatsapps" /> Написать в
-							Whatsapp</a
-						>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__logo">
+				<img src="assets/images/logo.png" alt="logo" />
+			</div>
+			<nav class="footer__nav">
+				<ul class="nav-list">
+					<li class="list-item">
+						<a href="./about-us.html">О нас</a>
+					</li>
+					<li class="list-item">
+						<a href="#build-steps">Ход строительства</a>
+					</li>
+					<li class="list-item">
+						<a href="#video">Видео объекта</a>
+					</li>
+					<li class="list-item">
+						<a href="#data-slider">Детали квартир</a>
+					</li>
+					<li class="list-item">
+						<a href="#slider">Галерея</a>
+					</li>
+					<li class="list-item">
+						<a href="#apartment-select">Планировки квартир</a>
+					</li>
+					<li class="list-item">
+						<a href="#contacts">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__bottom">
+				<p>© 2021 Титан. All rights reserved</p>
+				<img src="assets/images/instagram.png" alt="instagram" />
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<form action="#">
+					<div class="modal__close">
+						<svg data-close width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M7.94002 5.99999L12.8 1.13999C12.9092 1.01246 12.9663 0.848406 12.9598 0.680622C12.9533 0.512838 12.8838 0.353679 12.7651 0.234949C12.6463 0.116219 12.4872 0.0466642 12.3194 0.0401834C12.1516 0.0337026 11.9876 0.0907736 11.86 0.199991L7.00002 5.05999L2.14002 0.193324C2.01249 0.0841068 1.84844 0.0270364 1.68065 0.0335172C1.51287 0.039998 1.35371 0.109553 1.23498 0.228282C1.11625 0.347012 1.0467 0.506171 1.04022 0.673955C1.03373 0.841739 1.09081 1.00579 1.20002 1.13332L6.06002 5.99999L1.19336 10.86C1.12357 10.9198 1.06689 10.9933 1.02687 11.076C0.986857 11.1587 0.96437 11.2488 0.960824 11.3406C0.957278 11.4324 0.972748 11.524 1.00626 11.6095C1.03978 11.6951 1.09062 11.7728 1.15559 11.8378C1.22056 11.9027 1.29826 11.9536 1.38381 11.9871C1.46936 12.0206 1.56091 12.0361 1.65273 12.0325C1.74454 12.029 1.83463 12.0065 1.91734 11.9665C2.00005 11.9265 2.07359 11.8698 2.13336 11.8L7.00002 6.93999L11.86 11.8C11.9876 11.9092 12.1516 11.9663 12.3194 11.9598C12.4872 11.9533 12.6463 11.8838 12.7651 11.765C12.8838 11.6463 12.9533 11.4871 12.9598 11.3194C12.9663 11.1516 12.9092 10.9875 12.8 10.86L7.94002 5.99999Z"
+								fill="#C71616" />
+						</svg>
 					</div>
+					<h3 class="modal__title">Закажите обратный звонок</h3>
+					<p class="modal__description">Консультация нашего менеджера поможет Вам</p>
+					<input required placeholder="Ваше имя" name="name" type="text" class="modal__input" />
+					<input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input" />
+					<button class="modal__btn">Перезвонить мне</button>
+				</form>
+				<div class="whatsapp">
+					<a href="https://wa.me/77088028888"><img src="./assets/images/logos_whatsapp.png" alt="logo whatsapps" />
+						Написать в
+						Whatsapp</a>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
-		<script src="./utils/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
-		<script src="./utils/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script>
-			const swiper = new Swiper('.swiper-container', {
-				// Optional parameters
-				direction: 'horizontal',
-				// loop: true,
-				navigation: {
-					nextEl: '.swiper-next',
-					prevEl: '.swiper-prev',
-				},
-			});
-		</script>
-		<script>
-			let videoPlayer = document.getElementById('videoPlayer');
-			let video = document.getElementById('video');
+	<script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
+	<script src="./utils/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+	<script src="./utils/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			// loop: true,
+			navigation: {
+				nextEl: '.swiper-next',
+				prevEl: '.swiper-prev',
+			},
+		});
+	</script>
+	<script>
+		let videoPlayer = document.getElementById('videoPlayer');
+		let video = document.getElementById('video');
 
-			function stopVideo() {
-				video.pause();
-				video.currentTime = 0;
-				videoPlayer.style.display = 'none';
-			}
+		function stopVideo() {
+			video.pause();
+			video.currentTime = 0;
+			videoPlayer.style.display = 'none';
+		}
 
-			function playVideo(file) {
-				video.src = file;
-				videoPlayer.style.display = 'block';
-			}
-		</script>
+		function playVideo(file) {
+			video.src = file;
+			videoPlayer.style.display = 'block';
+		}
+	</script>
+	<script src="./js/index.js"></script>
+	<script src="./js/apartment-select.js"></script>
+	<script src='./js/com_premises.js'></script>
+</body>
 
-		<script src="./js/index.js"></script>
-		<script src="./js/apartment-select.js"></script>
-	</body>
 </html>
