@@ -14,4 +14,103 @@
     color: #fff;
     white-space: pre-line;
   }
+
+  h6 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    margin: 3rem 0;
+
+    color: #ffffff;
+  }
+
+  &__selections {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    grid-column-gap: 8.4rem;
+    grid-row-gap: .5rem;
+
+    @media only screen and (min-width: 960px) {
+      grid-template: 1fr / 1fr 1fr;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template: repeat(4, 1fr) / 1fr;
+      grid-row-gap: .5rem;
+      color: #fff;
+
+      li {
+        display: grid;
+        grid-template: 10.6rem / 17.1rem 1fr 1fr;
+        background: rgba(46, 46, 46, 0.67);
+        cursor: pointer;
+
+        .images-side {
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          &__drop{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 11;
+            display: flex;
+            top: 0;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(263.jpg);
+            transition: .1s ease-in-out;
+            transform: translateY(10.6rem);
+          }
+        }
+        &:hover{
+
+          .images-side__drop{
+            transform: translateY(0);
+          }
+        }
+        p {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  #com_premises__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.421);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 12;
+    padding: 10rem 5rem;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &.open{
+      display: flex;
+    }
+  }
 }
