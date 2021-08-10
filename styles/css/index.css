@@ -64,6 +64,10 @@ input {
   flex-wrap: wrap;
 }
 
+.full-height {
+  height: 100%;
+}
+
 .main-cont {
   background: url("../../../assets/images/hero__background.png") no-repeat center;
   background-size: cover;
@@ -90,7 +94,7 @@ input {
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   padding: 4.4rem;
   display: flex;
   grid-row-gap: 2rem;
@@ -146,7 +150,7 @@ input {
 }
 
 .header .menu-toggle {
-  color: #D9A85D;
+  color: #d9a85d;
   font-size: 3rem;
   cursor: pointer;
   z-index: 1500;
@@ -209,13 +213,26 @@ input {
   align-items: center;
 }
 
+.header__btn-wrapper__about-contact {
+  color: #fff;
+}
+
+.header__btn-wrapper__about-contact img {
+  width: 1.5rem;
+  height: 2.4rem;
+}
+
+.header__btn-wrapper__about-contact a:hover {
+  color: #d9a85d;
+}
+
 .header__btn-wrapper button {
   width: 19rem;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   font-size: 1.6rem;
   color: #fff;
-  padding: .7rem 0;
+  padding: 0.7rem 0;
 }
 
 @media (min-width: 960px) {
@@ -256,6 +273,11 @@ input {
 
 .hero__content {
   padding-top: 13vh;
+}
+
+.hero__content__about__logo {
+  width: 26.6rem;
+  height: 27.5rem;
 }
 
 .hero__title {
