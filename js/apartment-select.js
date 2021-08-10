@@ -78,32 +78,48 @@ room_amounts.forEach((item, i) => {
 
 apartmentImg.addEventListener('load', () => {
 	spinner.style.display = 'none';
-	apartmentImg.style.display = 'block'
+	apartmentImg.style.display = 'block';
 });
 
 createAreas(room_1);
 
 function createAreas(areas) {
 	areasCont.innerHTML = '';
-	areas.forEach(area => {
+	areas.forEach((area) => {
 		const newButton = document.createElement('button');
 		newButton.setAttribute('value', area.src);
 		newButton.classList.add('apartment-select__area');
 		newButton.classList.add('apartment-select__btn');
 		newButton.innerHTML = area.title;
 		areasCont.appendChild(newButton);
-	})
+	});
 
 	const areaBtns = document.querySelectorAll('.apartment-select__area');
-	areaBtns.forEach(areaBtn => {
+	areaBtns.forEach((areaBtn) => {
 		areaBtn.addEventListener('click', (e) => {
 			spinner.style.display = 'block';
-			apartmentImg.style.display = 'none'
-			areaBtns.forEach( areaBtnJ => {
+			apartmentImg.style.display = 'none';
+			areaBtns.forEach((areaBtnJ) => {
 				areaBtnJ.classList.remove('apartment-select__active-btn');
-			})
+			});
 			areaBtn.classList.add('apartment-select__active-btn');
 			apartmentImg.setAttribute('src', `./assets/images/apartments/${e.target.value}`);
 		});
-	})
+	});
 }
+
+const apartmentSeImg = document.querySelector('.apartment-select__selected-image');
+const apartment_select_modal = document.getElementById('com_premises__modal');
+const apartment_select_modal__img = document.getElementById('com_premises__modal__img');
+
+apartmentSeImg.addEventListener('click', () => {
+	const value = apartmentSeImg.getAttribute('src');
+	apartment_select_modal.classList.add('open')
+	apartment_select_modal__img.setAttribute('src', value);
+	document.body.style.overflow = 'hidden';
+});
+
+apartment_select_modal.addEventListener('click', () => {
+	apartment_select_modal.classList.remove('open')
+	document.body.style.overflow = '';
+})

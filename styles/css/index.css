@@ -522,6 +522,31 @@ input {
   align-self: center;
   width: 100%;
   object-fit: contain;
+  cursor: pointer;
+}
+
+.apartment-select #apartment-select__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.421);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 12;
+  padding: 10rem 5rem;
+}
+
+.apartment-select #apartment-select__modal img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.apartment-select #apartment-select__modal.open {
+  display: flex;
 }
 
 .spinner-grow {
