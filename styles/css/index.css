@@ -281,21 +281,21 @@ input {
 }
 
 .hero__title {
-  max-width: 65%;
+  max-width: 75%;
   font-family: "Gilroy", sans-serif;
-  font-size: 7.6rem;
+  font-size: 5.6rem;
   font-weight: 700;
-  line-height: 12.3rem;
+  line-height: 6.3rem;
   color: #ffffff;
 }
 
 @media (min-width: 768px) {
   .hero__title {
-    max-width: 65%;
+    max-width: 70%;
     font-family: "Gilroy", sans-serif;
-    font-size: 4.6rem;
+    font-size: 6.6rem;
     font-weight: 700;
-    line-height: 5.3rem;
+    line-height: 8.3rem;
     color: #ffffff;
   }
 }
@@ -304,9 +304,9 @@ input {
   .hero__title {
     max-width: 65%;
     font-family: "Gilroy", sans-serif;
-    font-size: 6.6rem;
+    font-size: 7.6rem;
     font-weight: 700;
-    line-height: 10.3rem;
+    line-height: 12.3rem;
     color: #ffffff;
   }
 }
@@ -1035,12 +1035,12 @@ input {
 }
 
 .location {
-  margin: 20rem 0;
+  margin: 10rem 0 !important;
 }
 
 .location__row {
   display: grid;
-  grid-template: 421.3px /  1fr 1fr;
+  grid-template: 421.3px / 1fr 1fr;
   grid-gap: 5rem;
 }
 
@@ -1101,9 +1101,10 @@ input {
   margin: 0 1rem 0 0;
 }
 
-.location__contacts a, .location__contacts p {
+.location__contacts a,
+.location__contacts p {
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (min-width: 960px) {
