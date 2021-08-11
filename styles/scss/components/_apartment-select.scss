@@ -1,9 +1,9 @@
 .apartment-select {
-  &__wrapper{
+  &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media only screen and (max-width: 960px){
+    @media only screen and (max-width: 960px) {
       grid-template: 1fr 1fr / 1fr;
     }
   }
@@ -52,7 +52,7 @@
     object-fit: contain;
     cursor: pointer;
   }
-  #apartment-select__modal{
+  #apartment-select__modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -65,13 +65,13 @@
     z-index: 12;
     padding: 10rem 5rem;
 
-    img{
+    img {
       height: 100%;
       width: 100%;
       object-fit: contain;
     }
 
-    &.open{
+    &.open {
       display: flex;
     }
   }

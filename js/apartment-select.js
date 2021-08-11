@@ -54,7 +54,7 @@
 const room_1 = [
 	{
 		src: '1kv 38.68.png',
-		title: '38m2',
+		title: '39m2',
 	},
 	{
 		src: '1kv 40.53.png',

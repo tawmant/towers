@@ -47,7 +47,7 @@
             display: inline-block;
             margin-right: 2rem;
             &__description {
-                @include font("Gilroy", 2rem, 450, 3rem, #fff);
+                @include font("Gilroy", 2rem, 400, 3rem, #fff);
                 margin: 2.5rem 0 7rem 0;
             }
         }
@@ -65,7 +65,7 @@
             opacity: 0;
             transition: 0.4s;
             padding: 1rem;
-            @include font("Gilroy", 1.6rem, 450, 2rem, #fff);
+            @include font("Gilroy", 1.6rem, 400, 2rem, #fff);
             // margin-bottom: 1rem;
         }
     }
