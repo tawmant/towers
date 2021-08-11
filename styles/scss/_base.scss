@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #1E1E1E;
+    background: #1e1e1e;
 }
 
 ul,
@@ -25,6 +25,7 @@ div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Gilroy";
 }
 
 * {
@@ -38,6 +39,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    font-family: "Gilroy";
 }
 
 img {
@@ -56,6 +58,6 @@ input {
     flex-wrap: wrap;
 }
 
-.full-height{
+.full-height {
     height: 100%;
 }
