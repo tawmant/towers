@@ -5,23 +5,32 @@
     margin-top: 1rem;
     &__logo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+            @include font("Gilroy", 1.2rem, 400, 1.9rem, #d9dbe1);
+        }
         img {
-            margin: 4rem 0;
             max-width: 25rem;
         }
     }
     &__nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 6.5rem;
         .nav-list {
             display: flex;
             flex-direction: column;
             .list-item {
                 // margin-right: 3rem;
+                @include font("Gilroy", 1.4rem, 500, 1.9rem, #fff);
                 a {
                     @include font("Gilroy", 1.4rem, 500, 1.9rem, #fff);
+                }
+                &__title {
+                    @include font("Gilroy", 2rem, 500, 2.5rem, #fff);
+                    margin-bottom: 1.5rem;
                 }
             }
         }
@@ -45,11 +54,31 @@
     &__bottom::after {
         content: "";
         position: absolute;
-        background: #8C8C8C;
+        background: #8c8c8c;
         opacity: 0.2;
         height: 0.14rem;
         width: 100%;
         top: -1rem;
         left: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .footer {
+        &__logo {
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
+        &__nav {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            .nav-list {
+                width: 80%;
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }
