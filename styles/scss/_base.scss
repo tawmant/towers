@@ -25,11 +25,11 @@ div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Gilroy";
 }
 
 * {
     scroll-behavior: smooth;
+    font-family: "Gilroy", sans-serif;
 }
 
 li {
@@ -39,7 +39,6 @@ a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    font-family: "Gilroy";
 }
 
 img {

@@ -1,0 +1,59 @@
+.location-m {
+    &__row {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 12rem 0;
+        text-align: center;
+    }
+    &__left {
+        max-width: 60%;
+    }
+    &__title {
+        @include font("Gilroy", 4.4rem, 700, 5.2rem, #d9a85d);
+        margin-bottom: 5rem;
+    }
+    &__description {
+        @include font("Gilroy", 1.6rem, 400, 2rem, #fff);
+        margin-bottom: 1rem;
+    }
+    &__list {
+        @include font("Gilroy", 1.6rem, 400, 2rem, #fff);
+        margin-left: 1rem;
+        text-align: left;
+        .list-item {
+            list-style: inside;
+        }
+    }
+    &__right {
+        max-width: 100%;
+    }
+    &__fake-img {
+        padding: 3rem 0;
+        max-width: 100%;
+        cursor: pointer;
+        width: 70rem;
+    }
+    .location__iframe {
+        padding: 3rem 0;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 960px) {
+    .location-m {
+        &__row {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            text-align: left;
+        }
+        &__left {
+            max-width: 33.33333%;
+        }
+        &__right {
+            max-width: 58.33333333%;
+        }
+    }
+}
