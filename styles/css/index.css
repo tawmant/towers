@@ -192,11 +192,11 @@ div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
 }
 
 * {
   scroll-behavior: smooth;
+  font-family: "Gilroy", sans-serif;
 }
 
 li {
@@ -207,7 +207,6 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  font-family: "Gilroy";
 }
 
 img {
@@ -435,11 +434,19 @@ input {
 
 .hero__content {
   padding-top: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__content__about__logo {
   width: 26.6rem;
   height: 27.5rem;
+}
+
+.hero__medina-logo {
+  margin-top: 4rem;
 }
 
 .hero__title {
@@ -455,9 +462,9 @@ input {
   .hero__title {
     max-width: 70%;
     font-family: "Gilroy", sans-serif;
-    font-size: 6.6rem;
+    font-size: 5.6rem;
     font-weight: 700;
-    line-height: 8.3rem;
+    line-height: 7.3rem;
     color: #ffffff;
   }
 }
@@ -470,6 +477,10 @@ input {
     font-weight: 700;
     line-height: 12.3rem;
     color: #ffffff;
+  }
+  .hero__content {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -1286,6 +1297,81 @@ input {
   display: block;
 }
 
+.location-m__row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 12rem 0;
+  text-align: center;
+}
+
+.location-m__left {
+  max-width: 60%;
+}
+
+.location-m__title {
+  font-family: "Gilroy", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  color: #d9a85d;
+  margin-bottom: 5rem;
+}
+
+.location-m__description {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.location-m__list {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #fff;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.location-m__list .list-item {
+  list-style: inside;
+}
+
+.location-m__right {
+  max-width: 100%;
+}
+
+.location-m__fake-img {
+  padding: 3rem 0;
+  max-width: 100%;
+  cursor: pointer;
+  width: 70rem;
+}
+
+.location-m .location__iframe {
+  padding: 3rem 0;
+  max-width: 100%;
+}
+
+@media (min-width: 960px) {
+  .location-m__row {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+  }
+  .location-m__left {
+    max-width: 33.33333%;
+  }
+  .location-m__right {
+    max-width: 58.33333333%;
+  }
+}
+
 .architecture {
   padding: 5rem 0 9rem 0;
 }
@@ -1449,9 +1535,8 @@ input {
 }
 
 .footer__nav .nav-list {
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .footer__nav .nav-list .list-item a {

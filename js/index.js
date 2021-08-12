@@ -71,7 +71,7 @@ inputs.forEach((item) => {
 
 // location
 const iframe = document.querySelector('.location__iframe'),
-	fakeImg = document.querySelector('.location__fake-img');
+	fakeImg = document.querySelector('.location-m__fake-img');
 
 fakeImg.addEventListener('click', () => {
 	fakeImg.classList.add('hide');

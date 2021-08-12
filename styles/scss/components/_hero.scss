@@ -3,11 +3,17 @@
     z-index: 1;
     &__content {
         padding-top: 13vh;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         &__about__logo {
             width: 26.6rem;
             height: 27.5rem;
         }
+    }
+    &__medina-logo {
+        margin-top: 4rem;
     }
     &__title {
         max-width: 75%;
@@ -20,7 +26,7 @@
     .hero {
         &__title {
             max-width: 70%;
-            @include font("Gilroy", 6.6rem, 700, 8.3rem, #ffffff);
+            @include font("Gilroy", 5.6rem, 700, 7.3rem, #ffffff);
         }
     }
 }
@@ -30,6 +36,10 @@
         &__title {
             max-width: 65%;
             @include font("Gilroy", 7.6rem, 700, 12.3rem, #ffffff);
+        }
+        &__content {
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 }

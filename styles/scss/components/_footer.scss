@@ -16,9 +16,8 @@
         justify-content: center;
         margin-bottom: 6.5rem;
         .nav-list {
-            width: 80%;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             .list-item {
                 // margin-right: 3rem;
                 a {
