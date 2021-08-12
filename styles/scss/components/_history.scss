@@ -1,74 +1,88 @@
 .history {
     padding: 7rem 0 9rem 0;
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background-color: #d9a85d;
-        width: 100%;
-    }
-    .swiper-pagination-progressbar {
-        width: 100%;
-        height: 0.2rem;
-        margin-top: 4.5rem;
-    }
+
     .swiper-wrapper {
         margin-top: 2rem;
-        display: flex;
-        p {
-            margin-bottom: 0.5rem;
+        display: grid;
+        grid-template: repeat(4, 1f) / 1fr;
+        @media only screen and (min-width: 960px) {
+            grid-template: repeat(4, 37rem) / 1fr;
         }
-    }
-    .swiper-slide {
-        @include font("Gilroy", 1.6rem, 400, 2rem, #fff);
-        height: 100%;
-    }
-    .mySwiper2 {
-        .swiper-img {
-            height: 37rem;
-            img {
-                object-fit: cover;
+        grid-row-gap: 11.5rem;
+
+        &__slide {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 8rem;
+
+            &:nth-child(1) {
+                flex-direction: column-reverse;
+            }
+
+            &:nth-child(3) {
+                flex-direction: column-reverse;
+            }
+
+            @media only screen and (min-width: 960px) {
+                display: grid;
+                grid-template: 1fr / 1fr 1fr;
+            }
+
+            &__img-cont {
+                height: 100%;
+                width: 100%;
+                border: 1rem solid rgba(97, 56, 56, 0);
+
+                &:nth-child(even) {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 28rem;
+                        bottom: -1rem;
+                        left: 3rem;
+                        right: -1rem;
+                        z-index: -1;
+                        border: 5px solid #d9a85d;
+
+                        @media only screen and (min-width: 960px) {
+                            top: 3rem;
+                            left: calc(50% + 7rem);
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    padding: 0;
+                    content: "";
+                    border-top: 5px solid #d9a85d;
+                    border-left: 5px solid #d9a85d;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__desc {
+                h3 {
+                    @include font("Gilroy", 3rem, 700, 4rem, #fff);
+                    margin: 0 0 2.5rem;
+                }
+                p {
+                    @include font("Gilroy", 1.4rem, 400, 1.6rem, #fff);
+                    white-space: pre-line;
+                    margin: 2.5rem 0 0;
+                }
             }
         }
     }
-    &__row {
-        display: flex;
-        justify-content: space-around;
-    }
+
     &__title {
         @include font("Gilroy", 4.4rem, 700, 6rem, #d9a85d);
-        margin-bottom: 6rem;
-        margin-left: 2rem;
-    }
-    .right-wrapper {
-        h3 {
-            margin-top: -2rem;
-            margin-bottom: 2rem;
-            @include font("Gilroy", 3rem, 600, 4rem, #fff);
-        }
-    }
-    &__right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    &__btns {
-        display: flex;
-        div {
-            margin-right: 1rem;
-        }
-    }
-}
-
-@media (max-width: 960px) {
-    .history {
-        text-align: center;
-        &__row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__btns {
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
-        }
+        margin: 0 0 6rem;
     }
 }
