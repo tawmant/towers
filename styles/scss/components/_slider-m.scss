@@ -1,0 +1,61 @@
+.slider-m {
+    padding: 10rem 0;
+    background: url("../../../assets/images/bg-data-slider.png") center no-repeat;
+    background-size: cover;
+    text-align: right;
+    .swiper-pagination-bullet {
+        background-color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #d9a85d;
+    }
+    .mySwiper2 {
+        height: 37rem;
+        img {
+            object-fit: cover;
+        }
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        img {
+            margin-bottom: 7rem;
+        }
+    }
+    &__title {
+        @include font("Gilroy", 5.4rem, 700, 8rem, #d9a85d);
+        margin-bottom: 1.5rem;
+    }
+    &__description {
+        @include font("Gilroy", 1.4rem, 400, 2rem, #fff);
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .slider-m {
+        text-align: center;
+        &__row {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            align-items: center;
+        }
+        &__right {
+            align-items: center;
+        }
+        &__left {
+            width: 80%;
+        }
+        a {
+            margin-bottom: 2rem;
+        }
+    }
+}
